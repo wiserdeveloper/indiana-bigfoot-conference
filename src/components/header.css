@@ -45,6 +45,10 @@
     font-weight: 700;
 }
 
+.navigation-menu li a:hover {
+    color: #ffffff;
+}
+
 .hamburger {
     border: 0;
     height: 40px;
