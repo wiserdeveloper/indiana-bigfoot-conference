@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 // import pages below
 import Header from './components/Header';
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
     <Header />
-    <Home />
+
+    <Routes>
+      <Route exact path='/' element={<Home />} />
+    </Routes>
     </>
   );
 }

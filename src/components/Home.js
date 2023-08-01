@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import './home.css'
 
 import HeaderImg from "./img/browncounty.jpg";
@@ -13,7 +15,7 @@ const Home = () => {
                <div className="event-info">
                     <h1>September 27th - 28th, 2024</h1>
                     <h1 id="event-location">The Seasons Lodge, Nashville, Indiana</h1>
-                    <button>Register to Attend Now!</button>
+                    <NavLink className='register-btn' to='/attend'>Register to Attend Now!</NavLink>
                </div>
           </div>
      )
