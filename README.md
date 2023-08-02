@@ -1,4 +1,4 @@
-Indiana Bigfoot Conference Official Website
+##Indiana Bigfoot Conference Official Website
 
 Created by Alyssa Wiser, Nathaniel Grandinette, Tim Quattrochi, and Taylor Johnson
 
