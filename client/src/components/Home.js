@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import './home.css'
 
 import HeaderImg from "./img/browncounty.jpg";
+import MobileImg from './img/mobile-bc.png';
 
 const Home = () => {
 
@@ -11,6 +12,9 @@ const Home = () => {
           <div>
                <div className="headerImg">
                     <img src={HeaderImg} alt="" />
+               </div>
+               <div className="headerImg-mobile">
+                    <img src={MobileImg} alt="" />
                </div>
                <div className="hp-body">
                     <div className="event-info">

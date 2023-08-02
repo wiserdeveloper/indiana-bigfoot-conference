@@ -62,3 +62,44 @@
      font-size: large;
      margin-left: -20px;
 }
+
+.headerImg-mobile {
+     display: none;
+}
+
+@media screen and (max-width: 768px) {
+     .headerImg {
+          display: none;
+     }
+     .headerImg-mobile {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+     }
+     .event-info {
+          font-size: x-small;
+          margin-left: 40px;
+          margin-top: 400px;
+          width: 300px;
+     }
+     #event-location {
+          width: 300px;
+          margin-left: 0px;
+          margin-bottom: 50px;
+     }
+     .register-btn {
+          margin-left: 50px;
+          font-size: small;
+     }
+     .event-desc h1 {
+          font-size: x-large;
+          width: 300px;
+          margin-left: -300px;
+          margin-top: -30px;
+     }
+     .event-desc p {
+          width: 300px;
+          margin-left: -300px;
+          font-weight: 300;
+     }
+}
