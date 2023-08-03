@@ -1,0 +1,255 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #rsvp {
+    --primary: #a36700;
+    --primaryLight: #415b44;
+    --secondary: #a36700;
+    --secondaryLight: #e5dece;
+    --headerColor: #5d4843;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+  @keyframes scaleFade {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.7);
+      opacity: 0;
+    }
+  }
+  #rsvp {
+    font-family: "Solway", serif;
+    padding: var(--sectionPadding);
+  }
+  #rsvp .rsvp-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #rsvp .rsvp-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #rsvp .rsvp-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #rsvp .rsvp-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    /* max width of 24 characters including spaces */
+    max-width: 24ch;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #rsvp .rsvp-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #rsvp .rsvp-background {
+    width: 100%;
+    height: 19.5rem;
+    display: block;
+    position: relative;
+  }
+  #rsvp .rsvp-background:before {
+    /* yellow dot */
+    content: "";
+    width: 1.125rem;
+    height: 1.125rem;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  #rsvp .rsvp-background:after {
+    /* yellow animated ring */
+    content: "";
+    width: 1.125rem;
+    height: 1.125rem;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    transition: transform 0.4s, opacity 0.4s;
+    animation-name: scaleFade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #rsvp .rsvp-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #rsvp .cs-form {
+    width: 100%;
+    max-width: 66.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #rsvp .cs-label {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    position: relative;
+  }
+  #rsvp .cs-input,
+  #rsvp select,
+  #rsvp .cs-select {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-family: "Solway", serif;
+    margin: 0;
+    /* 24px - 40px */
+    padding: 0 clamp(1.5rem, 5vw, 2.5rem) 0;
+    width: 100%;
+    /* 70px - 90px */
+    height: clamp(4.375rem, 7vw, 5.625rem);
+    background-color: #f1f1f4;
+    /* prevents border and padding from affecting height and width */
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    display: block;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  #rsvp .cs-input:hover,
+  #rsvp select:hover,
+  #rsvp .cs-select:hover,
+  #rsvp .cs-input:focus,
+  #rsvp select:focus,
+  #rsvp .cs-select:focus {
+    outline: none;
+    border-color: var(--primaryLight);
+  }
+
+  #rsvp .cs-icon {
+    width: 1.875rem;
+    height: auto;
+    position: absolute;
+    /* 24px - 40px, matches the padding left and right of input */
+    right: clamp(1.5rem, 5vw, 2.5rem);
+    /* these two center the icon inside the label */
+    bottom: 50%;
+    transform: translateY(115%);
+  }
+  #rsvp .cs-submit {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    /* 56px - 84px */
+    line-height: clamp(3.5rem, 6.5vw, 5.25rem);
+    font-family: "Solway", serif;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    /* 28px - 44px, minus the gap value. Should be 48px - 64px, but with a 20px gap on the flexbox, we account for that space when adding our margin top value so its 48px - 64px */
+    margin: clamp(1.75rem, 6vw, 2.75rem) auto 0;
+    color: #e5dece;
+    border: none;
+    /* 150px - 234px */
+    min-width: clamp(9.374rem, 18vw, 14.625rem);
+    padding: 0 1.5rem;
+    background-color: var(--primaryLight);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  #rsvp .cs-submit:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #5d4843;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #rsvp .cs-submit:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  #rsvp .cs-submit:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #rsvp .cs-background {
+    /* 310px - 568px */
+    height: clamp(19.375rem, 43vw, 35.5rem);
+  }
+  #rsvp .cs-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #rsvp .cs-label {
+    width: 48%;
+  }
+}

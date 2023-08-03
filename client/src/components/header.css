@@ -1,108 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap");
 
 .navigation {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0.5rem;
-    background-color: #5D4843;
-    color: black;
-    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5rem;
+  background-color: #5d4843;
+  color: black;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  z-index: 20;
 }
 
 .brand-name {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    margin-left: 1rem;
-    display: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  display: none;
 }
 
 .navigation-menu {
-    display: flex;
-    align-items: center;
-    width: 90%;
+  display: flex;
+  align-items: center;
+  width: 90%;
 }
 
 .navigation-menu ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .navigation-menu li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    color: #E5DECE;
-    font-family: 'Solway', serif;
-    font-weight: 700;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #e5dece;
+  font-family: "Solway", serif;
+  font-weight: 700;
 }
 
 .navigation-menu li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .hamburger {
-    border: 0;
-    height: 40px;
-    width: 40px;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: #5D4843;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    display: none;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #5d4843;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
 }
 
 .hamburger:hover {
-    background-color: #5D4843;
+  background-color: #5d4843;
 }
 
 @media screen and (max-width: 768px) {
-    .brand-name {
-        display: block;
-        font-family: 'Solway', serif;
-        color: #E5DECE;
-    }
-    .hamburger {
-        display: block;
-    }
-    .navigation-menu ul {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      height: calc(100vh - 77px);
-      background-color: #E5DECE;
-      border-top: 1px solid black;
-      display: none;
-    }
-    .navigation-menu li {
-      text-align: center;
-      margin: 0;
-    }
-    .navigation-menu li a {
-      color: #5D4843;
-      width: 100%;
-      padding: 1.5rem 0;
-    }
-    .navigation-menu li:hover {
-      background-color: #eee;
-    }
-    .navigation-menu.expanded ul {
-        display: block;
-    }
+  .brand-name {
+    display: block;
+    font-family: "Solway", serif;
+    color: #e5dece;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navigation-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: #e5dece;
+    border-top: 1px solid black;
+    display: none;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: #5d4843;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+  .navigation-menu.expanded ul {
+    display: block;
+  }
 }
