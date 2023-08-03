@@ -2,11 +2,11 @@
 
 .navigation {
     height: 60px;
-    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem;
     background-color: #5D4843;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
@@ -21,19 +21,20 @@
 }
 
 .navigation-menu {
-    margin-left: 20%;
     display: flex;
     align-items: center;
+    width: 90%;
 }
 
 .navigation-menu ul {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     padding: 0;
 }
 
 .navigation-menu li {
     list-style-type: none;
-    margin: 0 4rem;
 }
 
 .navigation-menu li a {
