@@ -96,11 +96,14 @@
      }
      .event-desc h1 {
           font-size: x-large;
-          width: 100%;
+          width: 300px;
+          margin-left: -70px;
      }
      .event-desc p {
-          width: 100%;
+          width: 300px;
           font-weight: 300;
+          margin-left: -70px;
+          margin-bottom: -80px;
      }
      .hp-body {
           flex-direction: column-reverse;

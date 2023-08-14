@@ -44,16 +44,16 @@ const Header = () => {
             <Link to="/attend">ATTEND</Link>
           </li>
           <li>
-            <Link href="speakers">SPEAKERS</Link>
+            <Link to="speakers">SPEAKERS</Link>
           </li>
           <li>
-            <Link href="/vendors">VENDORS</Link>
+            <Link to="/vendors">VENDORS</Link>
           </li>
           <li>
-            <Link href="/location">LOCATION</Link>
+            <Link to="/location">LOCATION</Link>
           </li>
           <li>
-            <Link href="/ibro">IBRO</Link>
+            <Link to="/ibro">IBRO</Link>
           </li>
         </ul>
       </div>
