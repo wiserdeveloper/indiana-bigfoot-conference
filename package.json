@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/wiserdeveloper/indiana-bigfoot-conference#readme",
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "react-icons": "^4.10.1"
   }
 }

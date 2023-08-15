@@ -1,8 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './location.css';
 import desktopImg from "../components/img/nashville-in.jpg"
 import mobileImg from '../components/img/mobile-nashville.jpg'
+
+import { MdCabin } from 'react-icons/md'
+import { FaHiking } from 'react-icons/fa'
+import { IoMdRestaurant } from 'react-icons/io'
+import { HiShoppingBag } from 'react-icons/hi'
 
 const Location = () => {
 
@@ -35,6 +41,27 @@ const Location = () => {
                <p>Nestled within the rolling hills of southern Indiana, Nashville exudes a unique charm that captivates the soul of every traveler. This picturesque town is an artistic haven, where quaint streets are adorned with galleries, studios, and boutiques, showcasing the works of local artisans. The air is filled with the sweet melodies of live music, offering a soothing backdrop as you explore the scenic trails, lush forests, and serene waterways that surround the area. With its warm community spirit and a welcoming atmosphere, Nashville, Indiana, invites you to indulge in its creative spirit, relish in outdoor adventures, and discover a hidden gem that promises unforgettable memories and a true sense of connection with both art and nature.</p>
                <h1>Come & Explore Nashville!</h1>
                </div>
+               </div>
+
+               <div className="icon-flex-container">
+                    <div className="icon-container">
+                         <div className="icon">
+                              <MdCabin />
+                              <Link className="icon-text" to='/stay-in-nashville'>Stay</Link>
+                         </div>
+                         <div className="icon">
+                              <FaHiking />
+                              <Link className="icon-text" to='/things-to-do'>Do</Link>
+                         </div>
+                         <div className="icon">
+                              <IoMdRestaurant />
+                              <Link className="icon-text" to='/restaurants-in-nashville'>Eat</Link>
+                         </div>
+                         <div className="icon">
+                              <HiShoppingBag />
+                              <Link className="icon-text" to='/shop-nashville'>Shop</Link>
+                         </div>
+                    </div>
                </div>
 
           </div>
