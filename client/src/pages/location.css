@@ -68,6 +68,15 @@
           text-align: center;
      }
 
+     .map-text-container {
+          max-width: 600px;
+          color: var(--headerColor);
+          font-weight: 700;
+          text-align: center;
+          margin-top: -600px;
+          margin-right: 300px;
+     }
+
      .location-text-container h1 {
           margin-top: 50px;
           text-align: center;
@@ -120,8 +129,20 @@
           margin-left: 30px;
      }
 
+     .nashville-map-container img {
+          margin-top: 10px;
+          width: 300px;
+          height: 350px;
+     }
+
      .location-text-container {
           text-align: center;
+     }
+
+     .map-text-container {
+          width: 350px;
+          margin-top: 5px;
+          margin-left: 300px;
      }
 
      .location-text-container h1 {
@@ -145,6 +166,17 @@
           width: 700px;
           height: 400px;
           margin-left: -150px;
+     }
+
+     .nashville-map-container img {
+          width: 400px;
+          margin-left: 1000px;
+          margin-top: 20px;
+          margin-bottom: 100px;
+     }
+
+     .nashville-map {
+          width: 100%;
      }
 
      .location-flex-container {

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import './location.css';
 import desktopImg from "../components/img/nashville-in.jpg"
 import mobileImg from '../components/img/mobile-nashville.jpg'
+import mapDesktopImg from '../components/img/nashville-map-desktop.png'
+import mapMobileImg from '../components/img/nashville-map-mobile.png'
 
 import { MdCabin } from 'react-icons/md'
 import { FaHiking } from 'react-icons/fa'
@@ -62,6 +64,28 @@ const Location = () => {
                               <Link className="icon-text" to='/shop-nashville'>Shop</Link>
                          </div>
                     </div>
+               </div>
+
+               <div className="nashville-map">
+                    <div className="nashville-map-container">
+                         <picture className="map-background">
+                              {/* <!--Mobile Image--> */}
+                              <source media="(max-width: 600px)" srcSet={mapMobileImg} />
+                              {/* <!--Tablet and above Image--> */}
+                              <source media="(min-width: 601px)" srcSet={mapDesktopImg} />
+                              <img
+                              loading="lazy"
+                              decoding="async"
+                              srcSet={mapDesktopImg}
+                              alt="nashville, indiana map"
+                              aria-hidden="true"
+                              />
+                         </picture>
+                    </div>
+               </div>
+               
+               <div className="map-text-container">
+                    <p>Nashville is just a short drive away from anywhere in Indiana, making it an easy and accessible destination. Whether you're up north near South Bend or down south close to Evansville, the journey is straightforward and offers a taste of different landscapes along the route. It's a quick trip that opens the door to Nashville's music, culture, and warm Southern welcome.</p>
                </div>
 
           </div>
