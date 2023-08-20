@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import './location.css';
+
 import desktopImg from "../components/img/nashville-in.jpg"
 import mobileImg from '../components/img/mobile-nashville.jpg'
 import mapDesktopImg from '../components/img/nashville-map-desktop.png'
