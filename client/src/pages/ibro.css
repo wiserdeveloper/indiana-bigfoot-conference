@@ -104,6 +104,7 @@
      .ibro-text h3 {
           margin-top: 0;
           color: var(--headerColor);
+          font-weight: 900;
      }
 
      .ibro-text p {
