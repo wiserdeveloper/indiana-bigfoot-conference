@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 // import pages below
 import Header from "./components/Header";
 import Home from "./components/Home";
-// import RegisterAttend from "./pages/RegisterAttend";
 import Location from './pages/Location'
 import IBRO from "./pages/IBRO";
 import Tickets from './pages/Tickets'
