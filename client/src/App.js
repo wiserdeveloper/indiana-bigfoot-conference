@@ -8,10 +8,15 @@ import Home from "./components/Home";
 import Location from './pages/Location'
 import IBRO from "./pages/IBRO";
 import Tickets from './pages/Tickets'
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+
+
+const stripePromise = loadStripe("")
 
 function App() {
   return (
-    <>
+    <Elements stripe={stripePromise}>
       <Header />
 
       <Routes>
@@ -20,7 +25,7 @@ function App() {
         <Route path='/location' element={<Location />} />
         <Route path="/ibro" element={<IBRO />} />
       </Routes>
-    </>
+    </Elements>
   );
 }
 
