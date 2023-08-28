@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import StripeTest from '../components/StripeTest/StripeTest'
+
+import Stripe from "./Stripe";
 
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
-// This is a public sample test API key.
-// Don’t submit any personally identifiable information in requests made with this key.
-// Sign in to see your own test API key embedded in code samples.
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+// This is your test publishable API key.
+const stripePromise = loadStripe("pk_test_51Nj2nuBvXyDWVtmIHmJRaKQozVcxcghT53PNrWEd896fMlWKpYRLpAlk6uDaYGS3RvZcai7Ba8xdQyJ74pqPAFjd00dOSpH7Hx", {
+     stripeAccount: 'acct_1Nj2nuBvXyDWVtmI',
+})
 
-export default function App() {
+export default function Tickets() {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function App() {
     fetch("/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
+      body: JSON.stringify({ items: [{ id: "ticket" }] }),
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
@@ -33,10 +34,10 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="Tickets">
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
-          <StripeTest />
+          <Stripe />
         </Elements>
       )}
     </div>
