@@ -4,7 +4,12 @@ const app = express();
 const port = 3001;
 
 const stripe = require("stripe")('sk_test_51Nj2nuBvXyDWVtmI0ZlcbnIH7cSrxMK5TFvYGM7ng9tQlZiBtS6PEAnd5IaMUJjZAldf0Na69eVlBdfojc0Bb0Oz00BUMjIbsx');
-const account = await stripe.accounts.retrieve('acct_1Nj2nuBvXyDWVtmI');
+// const account = await stripe.accounts.retrieve('acct_1Nj2nuBvXyDWVtmI');
+
+async function retrieveStripeAccount() {
+  const account = await stripe.accounts.retrieve('acct_1Nj2nuBvXyDWVtmI')
+  return account
+}
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));

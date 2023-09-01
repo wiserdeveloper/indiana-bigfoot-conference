@@ -6,6 +6,8 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 
+import './stripe.css';
+
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
@@ -90,6 +92,7 @@ export default function CheckoutForm() {
   };
 
   return (
+    <section>
     <form id="payment-form" onSubmit={handleSubmit}>
       <LinkAuthenticationElement
         id="link-authentication-element"
@@ -114,5 +117,6 @@ export default function CheckoutForm() {
       {/* Show any error or success messages */}
       {message && <div id="payment-message">{message}</div>}
     </form>
+    </section>
   );
 }
