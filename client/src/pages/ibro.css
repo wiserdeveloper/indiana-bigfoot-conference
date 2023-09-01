@@ -113,3 +113,22 @@
           font-weight: 700;
      }
 }
+
+@media (max-width: 480px) {
+     .ibro-img-container {
+          margin-top: -150px;
+          margin-left: 70px;
+     }
+
+     .ibro-text {
+          margin-top: 300px;
+          margin-left: -280px;
+          margin-right: 20px;
+          text-align: center;
+          margin-bottom: -80px;
+     }
+
+     .ibro-member {
+          margin-bottom: 150px;
+     }
+}
