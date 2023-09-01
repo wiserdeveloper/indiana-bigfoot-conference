@@ -57,7 +57,7 @@
           flex-direction: column;
           /* centers content horizontally, set to flex-start to left align */
           align-items: flex-start;
-          margin-left: 200px;
+          margin-left: 10px;
      }
 
      #tickets .ticket-topper {
@@ -70,12 +70,13 @@
           color: var(--primary);
           margin-bottom: 0.25rem;
           display: block;
-          margin-left: 300px;
+          margin-left: 470px;
      }
 
      #tickets h3 {
-          margin-left: 180px;
+          margin-left: 0;
           margin-bottom: 50px;
+          margin-left: 350px;
           color: var(--primary);
      }
 
@@ -89,7 +90,7 @@
           margin: 0 0 1rem 0;
           color: var(--headerColor);
           position: relative;
-          margin-left: -20px;
+          margin-left: 150px;
      }
 
      #tickets p {
@@ -101,5 +102,6 @@
           margin: 0;
           color: var(--headerColor);
           font-weight: 700;
+          margin-left: 180px;
      }
 }
