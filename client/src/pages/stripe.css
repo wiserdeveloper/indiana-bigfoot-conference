@@ -120,3 +120,11 @@ button:disabled {
     min-width: initial;
   }
 }
+
+@media (max-width: 480px) {
+  form {
+    margin-left: -2px;
+    margin-top: 50px;
+    width: 280px;
+  }
+}
