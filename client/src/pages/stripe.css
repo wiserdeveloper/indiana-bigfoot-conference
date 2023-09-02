@@ -1,7 +1,5 @@
 /* FORM */
 form {
-  margin-left: 1000px;
-  margin-top: -420px;
   width: 30vw;
   min-width: 500px;
   align-self: center;
@@ -11,7 +9,6 @@ form {
   background-color: rgb(241, 241, 241);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
-  padding: 40px;
 }
 
 #payment-message {
@@ -24,6 +21,10 @@ form {
 
 #payment-element {
   margin-bottom: 24px;
+}
+
+#payment-form {
+  max-width: 550px;
 }
 
 button {
