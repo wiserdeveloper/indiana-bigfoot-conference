@@ -1,134 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap");
 
 @media only screen and (min-width: 0rem) {
-     #ibro {
-          --primary: #a36700;
-          --primaryLight: #415b44;
-          --secondary: #a36700;
-          --secondaryLight: #e5dece;
-          --headerColor: #5d4843;
-          --bodyTextColor: #4e4b66;
-          --bodyTextColorWhite: #fafbfc;
-          --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-          --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-          --bodyFontSize: 1rem;
-          --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-     }
+  #ibro {
+    --primary: #a36700;
+    --primaryLight: #415b44;
+    --secondary: #a36700;
+    --secondaryLight: #e5dece;
+    --headerColor: #5d4843;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
 
-     #ibro {
-          font-family: "Solway", serif;
-          padding: var(--sectionPadding);
-     }
+  #ibro {
+    font-family: "Solway", serif;
+    padding: var(--sectionPadding);
+  }
 
-     #ibro .ibro-container {
-          width: 100%;
-          max-width: 80rem;
-          margin: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: clamp(3rem, 6vw, 4rem);
-     }
+  #ibro .ibro-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
 
-     #ibro .ibro-title {
-          font-size: var(--headerFontSize);
-          font-weight: 900;
-          line-height: 1.2em;
-          text-align: inherit;
-          max-width: 24ch;
-          margin: 0 0 1rem 0;
-          color: var(--headerColor);
-          position: relative;
-     }
+  #ibro .ibro-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 24ch;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
 
-     #ibro .ibro-content {
-          text-align: center;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-     }
+  #ibro .ibro-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-     #ibro .ibro-topper {
-          font-size: var(--topperFontSize);
-          line-height: 1.2em;
-          text-transform: uppercase;
-          text-align: inherit;
-          letter-spacing: 0.1em;
-          font-weight: 700;
-          color: var(--primary);
-          margin-bottom: 0.25rem;
-          display: block;
-     }
+  #ibro .ibro-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
 
-     .ibro-text-container {
-          max-width: 1000px;
-          color: var(--headerColor);
-          font-weight: 700;
-          text-align: center;
-     }
+  .ibro-text-container {
+    width: 90%;
+    max-width: 1000px;
+    color: var(--headerColor);
+    font-weight: 700;
+    text-align: center;
+  }
 
-     .ibro-members-container h2 {
-          color: var(--headerColor);
-          font-size: xx-large;
-          text-align: center;
-          margin-bottom: 50px;
-     }
+  .ibro-text-container p {
+    text-align: justify;
+  }
 
-     /* MEMBERS */
+  .ibro-members-container h2 {
+    color: var(--headerColor);
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
+  /* MEMBERS */
+
+  .ibro-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .ibro-members-container {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .ibro-members-content {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     gap: 100px;
+  }
+
+  .ibro-img-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ibro-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .ibro-text {
+    width: 75%;
+    text-align: justify;
+  }
+
+  .ibro-text h3 {
+    margin-top: 0;
+    color: var(--headerColor);
+    font-weight: 900;
+  }
+
+  .ibro-text p {
+    margin: 0;
+    color: var(--headerColor);
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 500px) {
      .ibro-member {
-          display: flex;
-          align-items: center;
-          margin-bottom: 100px;
-     }
-
-     .ibro-img-container {
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          overflow: hidden;
-          margin-right: 20px;
-     }
-
-     .ibro-img-container img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-     }
-
-     .ibro-text {
-          flex: 1;
+          flex-direction: column;
      }
 
      .ibro-text h3 {
-          margin-top: 0;
-          color: var(--headerColor);
-          font-weight: 900;
-     }
-
-     .ibro-text p {
-          margin: 0;
-          color: var(--headerColor);
-          font-weight: 700;
-     }
-}
-
-@media (max-width: 480px) {
-     .ibro-img-container {
-          margin-top: -150px;
-          margin-left: 70px;
+          text-align: center;
      }
 
      .ibro-text {
-          margin-top: 300px;
-          margin-left: -280px;
-          margin-right: 20px;
-          text-align: center;
-          margin-bottom: -80px;
-     }
-
-     .ibro-member {
-          margin-bottom: 150px;
+          width: 90%;
      }
 }
