@@ -48,7 +48,7 @@
 }
 
 .navigation-menu li a:hover {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .hamburger {
@@ -81,19 +81,14 @@
     display: block;
   }
   .navigation-menu ul {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    height: calc(100vh - 77px);
-    background-color: #e5dece;
-    border-top: 1px solid black;
     display: none;
   }
   .navigation-menu li {
     text-align: center;
     margin: 0;
+    -webkit-animation: fadein backwards 3s;
+    -moz-animation: fadein backwards 3s;
+    -o-animation: fadein backwards 3s;
   }
   .navigation-menu li a {
     color: #5d4843;
@@ -104,6 +99,38 @@
     background-color: #eee;
   }
   .navigation-menu.expanded ul {
-    display: block;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: #e5dece;
+    border-top: 1px solid black;
+    -webkit-animation: dropdown backwards 1s;
+    -moz-animation: dropdown backwards 1s;
+    -o-animation: dropdown backwards 1s;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    height: 0vh;
+  }
+
+  to {
+    height: calc(100vh - 77px);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
