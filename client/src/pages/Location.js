@@ -58,7 +58,7 @@ const Location = () => {
           </div>
         </div>
 
-        <div className="icon-flex-container">
+        {/* <div className="icon-flex-container">
           <div className="icon-container">
             <div className="icon">
               <MdCabin />
@@ -85,7 +85,7 @@ const Location = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="nashville-map">
           <div className="map-text-container">
