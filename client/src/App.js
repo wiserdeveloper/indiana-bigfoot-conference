@@ -7,6 +7,8 @@ import Home from "./components/Home";
 import Location from './pages/Location'
 import IBRO from "./pages/IBRO";
 import Tickets from './pages/Tickets'
+import Speakers from "./pages/Speakers";
+
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
@@ -23,6 +25,7 @@ function App() {
         <Route path="/tickets" element={<Tickets />} />
         <Route path='/location' element={<Location />} />
         <Route path="/ibro" element={<IBRO />} />
+        <Route path="/speakers" element={<Speakers />} />
       </Routes>
     </Elements>
   );
