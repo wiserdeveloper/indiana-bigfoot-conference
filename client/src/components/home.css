@@ -2,7 +2,6 @@
 
 .headerImg img {
      width: 100%;
-     /* height: auto; */
      aspect-ratio: 8/2;
 }
 
@@ -95,29 +94,27 @@
 
 .flyer-container {
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
+     justify-content: center;
      align-items: center;
+     gap: 50px;
 }
 
 .con-flyer,
 .host-ibro-flyer {
-     flex: 1;
-     margin: 0 10px;
      margin-top: 100px;
 }
 
 .host-flyer h2 {
      color: var(--headerColor);
      width: 350px;
+     margin: 0 auto;
      text-align: center;
-     margin-left: 50px;
      margin-top: 100px;
 }
 
 .con-flyer img {
      width: 500px;
-     margin-right: 100px;
-     margin-left: 100px;
 }
 
 .ibro-flyer img {
@@ -126,31 +123,4 @@
 
 .ibro-flyer {
      max-width: 100%;
-}
-
-@media (max-width: 768px) {
-     .flyer-container {
-          flex-direction: column;
-          align-items: center;
-     }
-
-     .con-flyer,
-     .host-ibro-flyer {
-          margin: 10px 0;
-     }
-
-     .host-flyer {
-          width: auto;
-     }
-
-     .con-flyer img,
-     .ibro-flyer img {
-          max-width: 100%;
-          width: auto;
-          margin: 0;
-     }
-
-     .host-flyer h2 {
-          margin-left: 0;
-     }
 }
