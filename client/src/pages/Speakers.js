@@ -70,8 +70,8 @@ export default function Speakers() {
                                         </picture>
                                    </div>
                                    <div className="speakers-text">
-                                        <h3>Mark DeWerth</h3>
-                                        <p>TBA</p>
+                                        <h3>Marc DeWerth</h3>
+                                        <p>Marc DeWerth of the Ohio Bigfoot Conference will be joining us for a special presentation of "The Ohio Bigfoot". Marc DeWerth of Columbia Station, Ohio has been a longtime Bigfoot Investigator with over 30 years of experience. He's involved with groups like the BFRO, and the Ohio Bigfoot Organization. Currently Marc and his group, The Ohio Bigfoot Organization, are the hosts of the Ohio Bigfoot Conference which is a nationally recognized event that takes place every Spring at Salt Fork State Park. Marc's talk "The Ohio Valley Bigfoot" will center on the flap of recent sighting reports that have taken place in Ohio over the last few years. He will also play some including audio recordings that he and his team captured in 2021 - 2023 in Ohio.</p>
                                    </div>
                               </div>
 
@@ -107,7 +107,7 @@ export default function Speakers() {
                                    </div>
                                    <div className="speakers-text">
                                         <h3>Greg Yost (Squatchman)</h3>
-                                        <p>TBA</p>
+                                        <p>I'm Greg Yost and most know me by Squatchman!!! I reside in Jeffersonville Indiana since 1993 . Right across the Ohio River I was born and raised in Louisville Kentucky  going into the Navy out of Seneca High School for 11 years of service!!!! I'm single and have a son Eugene ( Son of Squatchman) and a stepdaughter Helana!!!! I got into the Bigfoot Phenomenon back in November of 2002 when I had my first encounter, rather frightening at the Ferdinand State Forest which I'll tell at the IBRO conference I was totally into it and have spent the last 21 years on what I call The Journey to the Truth!!!! Have had many experiences, encounters and interactions with the Forrest People and gathered great pictures and evidence of them and things they do I call woodcraft!!!! I've been Blessed with my Journey and the most important thing I've learned from it is to communicate and interact with the Forest People and build a trusted mutual relationship with them on their terms!!!! I respect them and they respect me and at times I ask for favors from them like vocals, knocks eyeglow and even up to pushing trees over almost always getting something to the amazed people who have witnessed this and it's been Many!!!!! I don't consider myself a researcher or a evidence seeker ,I'm in it for much more, My Journey and the people I share it with!!!! Didn't know much about Bigfoot 21 years ago but how much I've learned over the years!!!!! This is my calling and Love and looking forward to sharing my story with you at the conference!!!!!</p>
                                    </div>
                               </div>
 

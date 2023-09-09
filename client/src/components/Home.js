@@ -1,39 +1,62 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./home.css";
+import conFlyer from '../components/img/flyer.png'
+import ibroFlyer from "../components/img/ibro-flyer.png"
 
 import HeaderImg from "./img/browncounty.jpg";
-import MobileImg from "./img/mobile-bc.png";
 
 const Home = () => {
   return (
     <div>
+      {/* HEADER IMG */}
       <div className="headerImg">
         <img src={HeaderImg} alt="" />
       </div>
-      <div className="headerImg-mobile">
-        <img src={MobileImg} alt="" />
-      </div>
-      <div className="hp-body">
-        <div className="event-desc">
-          <h1>Indiana's 1st Annual Bigfoot Conference</h1>
-          <p>
-            Get ready to mark your calendars and join us for an unforgettable
+      
+      <div id="hp">
+        <div className="hp-container">
+          <div className="hp-content">
+            <span className="hp-topper">Indiana's 1st Annual Bigfoot Conference</span>
+            <h2 className="hp-title">Indiana Bigfoot Conference</h2>
+          </div>
+
+          <div className="hp-text-container">
+            <h2>September 27th - September 28th, 2024</h2>
+            <h2>The Seasons Lodge, Nashville, Indiana</h2>
+            <NavLink className="tickets-btn" to="/tickets">Buy Tickets!</NavLink>
+            <h3>Get ready to mark your calendars and join us for an unforgettable
             experience at Indiana's highly anticipated Bigfoot Conference taking
             place from September 27th to September 28th, 2024. Nestled in the
             captivating realm of Nashville, Indiana, renowned for its legendary
             Bigfoot sightings, this exceptional event is an absolute must-attend
-            for all enthusiasts and curious minds alike.
-          </p>
-        </div>
-        <span className="event-info-divider"></span>
-        <div className="event-info">
-          <h1>September 27th - 28th, 2024</h1>
-          <h1 id="event-location">The Seasons Lodge, Nashville, Indiana</h1>
-          <NavLink className="register-btn" to="/attend">
-            Register to Attend Now!
-          </NavLink>
+            for all enthusiasts and curious minds alike.</h3>
+          </div>
+
+          <div className="flyer-container">
+            <picture className="con-flyer">
+              <img 
+              loading="lazy"
+              decoding="async"
+              srcSet={conFlyer}
+              alt="Indy Bigfoot Con Flyer"
+              aria-hidden="true"
+              />
+            </picture>
+            <div className="host-flyer">
+              <h2>Special Thanks to IBRO for Hosting Indy Bigfoot Con</h2>
+              <picture className="ibro-flyer">
+              <img 
+              loading="lazy"
+              decoding="async"
+              srcSet={ibroFlyer}
+              alt="IBRO Flyer"
+              aria-hidden="true"
+              />
+            </picture>
+            </div>
+          </div>
         </div>
       </div>
     </div>
