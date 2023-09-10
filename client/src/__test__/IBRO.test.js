@@ -39,6 +39,6 @@ describe("IBRO", () => {
 
     it("Should display 4 researchers", () => {
         const researchers = screen.getAllByTestId("researchers")
-        expect(researchers).toBeInTheDocument()
+        expect(researchers).toHaveLength(4)
     })
 })
