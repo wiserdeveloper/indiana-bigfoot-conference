@@ -40,7 +40,7 @@ const Location = () => {
           </div>
 
           <div className="location-text-container">
-            <p>
+            <p data-testid="city-description">
               Nestled within the rolling hills of southern Indiana, Nashville
               exudes a unique charm that captivates the soul of every traveler.
               This picturesque town is an artistic haven, where quaint streets
@@ -89,7 +89,7 @@ const Location = () => {
 
         <div className="nashville-map">
           <div className="map-text-container">
-            <p>
+            <p data-testid="city-description-pt2">
               Nashville is just a short drive away from anywhere in Indiana,
               making it an easy and accessible destination. Whether you're up
               north near South Bend or down south close to Evansville, the
