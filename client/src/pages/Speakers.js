@@ -10,6 +10,7 @@ import gregYost from "../components/img/greg.jpg";
 import ernie from "../components/img/ernie.jpg";
 
 export default function Speakers() {
+
   const speakers = [
     {
       name: "Adam Davies",
