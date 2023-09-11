@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap");
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #rsvp {
@@ -147,6 +149,7 @@
     line-height: 1.5em;
     width: 100%;
     display: flex;
+    font-family: "Solway", serif;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -164,7 +167,7 @@
     width: 100%;
     /* 70px - 90px */
     height: clamp(4.375rem, 7vw, 5.625rem);
-    background-color: #f1f1f4;
+    background-color: #ebe6df;
     /* prevents border and padding from affecting height and width */
     box-sizing: border-box;
     border: 3px solid transparent;
@@ -206,7 +209,7 @@
     color: #e5dece;
     border: none;
     /* 150px - 234px */
-    min-width: clamp(9.374rem, 18vw, 14.625rem);
+    min-width: clamp(7.374rem, 15vw, 12.625rem);
     padding: 0 1.5rem;
     background-color: var(--primaryLight);
     border-radius: 0.25rem;
@@ -237,6 +240,25 @@
   #rsvp .cs-submit:hover:before {
     width: 100%;
   }
+  .cs-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+
+  .check-label.cs-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -251,5 +273,30 @@
   }
   #rsvp .cs-label {
     width: 48%;
+    font-family: "Solway", serif;
   }
+}
+
+.cs-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.cs-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #5d4843;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  word-break: break-word;
 }
