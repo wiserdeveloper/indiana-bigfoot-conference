@@ -10,8 +10,7 @@
     --headerColor: #5d4843;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
@@ -54,17 +53,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #rsvp .rsvp-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
-  }
+
   #rsvp .rsvp-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
@@ -76,66 +65,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #rsvp .rsvp-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #rsvp .rsvp-background {
-    width: 100%;
-    height: 19.5rem;
-    display: block;
-    position: relative;
-  }
-  #rsvp .rsvp-background:before {
-    /* yellow dot */
-    content: "";
-    width: 1.125rem;
-    height: 1.125rem;
-    background: var(--primary);
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-  }
-  #rsvp .rsvp-background:after {
-    /* yellow animated ring */
-    content: "";
-    width: 1.125rem;
-    height: 1.125rem;
-    background: transparent;
-    border-radius: 50%;
-    border: 1px solid var(--primary);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    z-index: 10;
-    transition: transform 0.4s, opacity 0.4s;
-    animation-name: scaleFade;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-  }
-  #rsvp .rsvp-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+
   #rsvp .cs-form {
     width: 100%;
     max-width: 66.5rem;
@@ -299,4 +229,20 @@
   margin-bottom: 0.5rem;
   text-align: center;
   word-break: break-word;
+}
+
+.cs-success {
+  color: green;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cs-error {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

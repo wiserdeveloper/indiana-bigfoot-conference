@@ -1,24 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./vendorSignup.css";
-import locationMap from "../../components/img/location-map.png";
 import locationIcon from "../../components/img/location-icon.svg";
 import emailjs from "@emailjs/browser";
-
-// Vendors should be able to access a page for them to sign up/register to be a vendor. They will be able to fill out a form that requires them to input their vendor information:
-
-// Name of Company ** done
-// What they will be selling ** done
-// What they are bringing
-// Are they will to donate (checkbox option)** done
-// Contact Number ** done
-// Company Email ** done
-// Website URL ** done
-// City, State, Zip ** done
-// The host will supply electricity and tables. ** done
-// If selected, vendors will then have a month to pay a fee of $100 after they are selected.
-// Vendors must be set up by 2PM on Friday at the latest, doors to vendor hall will open at 10am each day.
-
-// Once form is submitted, the information will then be sent to either bfc2024vendors@gmail.com OR sent to a Google Sheets or Admin Page. They must also sign an agreement in order to be selected.
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete for accessibility, google loves a11y for ranking.
 
@@ -34,38 +17,47 @@ const initialFormState = {
 };
 const VendorRequestForm = () => {
   const [formData, setFormData] = useState(initialFormState);
+  const [messageSent, setMessageSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const form = useRef();
 
   const handleSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
+
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        process.env.REACT_APP_SERVICE_ID,
+        "template_o52ua0t",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setLoading(false);
+          if (result.text === "OK") {
+            setMessageSent(true);
+            form.current.reset();
+            setLoading(false);
+          }
         },
         (error) => {
           setLoading(false);
           console.log(error.text);
+          setError(true);
         }
       );
+    setFormData(initialFormState);
   };
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, checked } = e.target;
+
     setFormData({
       ...formData,
       [name]: value,
-      willDonate: e.target.checked,
+      willDonate: checked,
     });
   };
 
@@ -73,31 +65,11 @@ const VendorRequestForm = () => {
     <section id="rsvp">
       <div className="rsvp-container">
         <div className="rsvp-content">
-          <span className="rsvp-topper">RSVP</span>
           <h2 className="rsvp-title">
             Request to be a Vendor for Indiana's 1st Annual Bigfoot
             Conference
           </h2>
-          <p className="rsvp-text">
-            The host will supply electricity and tables.
-          </p>
         </div>
-
-        <picture className="rsvp-background">
-          {/* <!--Mobile Image--> */}
-          <source media="(max-width: 600px)" srcSet={locationMap} />
-          {/* <!--Tablet and above Image--> */}
-          <source media="(min-width: 601px)" srcSet={locationMap} />
-          <img
-            loading="lazy"
-            decoding="async"
-            srcSet={locationMap}
-            alt="location map"
-            width="1280"
-            height="568"
-            aria-hidden="true"
-          />
-        </picture>
 
         <form
           className="cs-form"
@@ -116,6 +88,28 @@ const VendorRequestForm = () => {
               name="companyName"
               placeholder="What is your company name?"
               autoComplete="organization"
+              onChange={handleChange}
+            />
+            <img
+              className="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/person-gold.svg"
+              alt="person icon"
+              width="32"
+              height="32"
+            />
+          </label>
+          <label className="cs-label">
+            Contact Name
+            <input
+              className="cs-input"
+              required
+              type="text"
+              id="contactName"
+              name="contactName"
+              placeholder="What is your name?"
+              autoComplete="name"
               onChange={handleChange}
             />
             <img
@@ -228,14 +222,26 @@ const VendorRequestForm = () => {
               type="checkbox"
               name="willDonate"
               autoComplete="url"
+              id="willDonate"
               value={formData.willDonate}
               onChange={handleChange}
             />
           </label>
 
           <button className="cs-submit" type="submit">
-            Submit Request
+            {loading ? "Sending..." : "Submit"}
           </button>
+          {messageSent && (
+            <p className="cs-success">
+              Thank you for your submission! We will be in touch soon.
+            </p>
+          )}
+          {error && (
+            <p className="cs-error">
+              There was an error sending your message. Please try
+              again later.
+            </p>
+          )}
         </form>
       </div>
       <div className="disclaimer">
