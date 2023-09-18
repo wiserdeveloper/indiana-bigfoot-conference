@@ -6,6 +6,7 @@
   "scripts": {
     "server": "npm start --workspace=server",
     "client": "npm start --workspace=client",
+    "build": "npm run build --workspace=client",
     "test:client": "cd client && npm test",
     "test": "npm run test:client",
     "start": "concurrently --kill-others-on-fail \"npm run server\"  \"npm run client\""
