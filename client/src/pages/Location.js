@@ -8,11 +8,6 @@ import mobileImg from "../components/img/mobile-nashville.jpg";
 import mapDesktopImg from "../components/img/nashville-map-desktop.png";
 import mapMobileImg from "../components/img/nashville-map-mobile.png";
 
-import { MdCabin } from "react-icons/md";
-import { FaHiking } from "react-icons/fa";
-import { IoMdRestaurant } from "react-icons/io";
-import { HiShoppingBag } from "react-icons/hi";
-
 const Location = () => {
   // let map;
   // const nashville = { lat: 39.2025, lng: 86.2371 }
