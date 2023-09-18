@@ -57,9 +57,7 @@ const IBRO = () => {
             Steve and Violet Abney decided due to heath issues it was time for
             someone else to take over the Organization. LeRoy Nail a life time
             resident of Morgan county Indiana excepted the challenge to help
-            move Organization and commit to the on-going research and Growth. We
-            are a independent Organization however we are associate the Kentucky
-            Bigfoot Researchers lead by Lonnie Hawk.
+            move Organization and commit to the on-going research and Growth. 
           </p>
           <p>
             2014 into the Summer of 2016 has been a great for our organization.
