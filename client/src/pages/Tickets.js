@@ -17,7 +17,7 @@ export default function Tickets() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("indiana-bigfoot-conference-server.vercel.app/api/payments/create-payment-intent", {
+    fetch("https://indiana-bigfoot-conference-server.vercel.app/api/payments/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: [{ id: "ticket" }] }),
