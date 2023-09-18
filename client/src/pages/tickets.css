@@ -106,7 +106,7 @@
           width: 40%;
      }
 
-     #payment-form {
-          width: 40%;
+     .rsvp-text {
+          margin-bottom: -40px;
      }
 }

@@ -72,6 +72,7 @@
           color: var(--headerColor);
           font-weight: 700;
           text-align: center;
+          margin-top: -30px;
      }
 
      .hp-text-container h3 {
@@ -102,7 +103,7 @@
 
 .con-flyer,
 .host-ibro-flyer {
-     margin-top: 100px;
+     margin-top: 20px;
 }
 
 .host-flyer h2 {
@@ -110,15 +111,17 @@
      width: 350px;
      margin: 0 auto;
      text-align: center;
-     margin-top: 100px;
+     margin-top: 20px;
 }
 
 .con-flyer img {
-     width: 500px;
+     width: 300px;
 }
 
 .ibro-flyer img {
-     width: 500px;
+     margin-top: 10px;
+     width: 300px;
+     margin-left: 25px;
 }
 
 .ibro-flyer {

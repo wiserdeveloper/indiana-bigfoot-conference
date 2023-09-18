@@ -67,8 +67,9 @@
   }
 
   #rsvp .cs-form {
-    width: 100%;
+    width: 80%;
     max-width: 66.5rem;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
