@@ -10,7 +10,6 @@ form {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   margin-top: -20px;
-  margin-bottom: 200px;
 }
 
 #payment-message {
@@ -129,5 +128,6 @@ button:disabled {
     margin-left: -2px;
     margin-top: 50px;
     width: 280px;
+    margin-bottom: 200px;
   }
 }
