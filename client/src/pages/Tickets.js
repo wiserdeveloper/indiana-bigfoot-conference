@@ -8,7 +8,7 @@ import './tickets.css';
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe("pk_live_51Nj2nuBvXyDWVtmI84etLV0kefS9DkyeUUa5aznxpiFtS6qstp4KJWlMyBLtDZWNDvLoLUG87tjgGWVU15hXx9RP00WB2MuejA", {
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY, {
      stripeAccount: 'acct_1Nj2nuBvXyDWVtmI',
 })
 
