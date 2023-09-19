@@ -226,7 +226,6 @@
 .disclaimer {
   font-size: 0.8rem;
   color: #5d4843;
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
   word-break: break-word;
@@ -246,4 +245,11 @@
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .disclaimer {
+    margin-top: -180px;
+  }
 }
