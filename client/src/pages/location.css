@@ -135,6 +135,9 @@
 
 .the-map {
   border: none;
+  width: clamp(400px, 90%, 950px);
+  height: 500px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 250px) {
@@ -163,8 +166,6 @@
   }
 
   .the-map {
-    width: 350px;
-    height: 400px;
   }
 }
 
