@@ -27,13 +27,7 @@ const IBRO = () => {
       description:
         "We are Jim and Tonya from Wiser's Weird Wanderings and we have been with Leroy since he took over the IBRO. I've always believed in Bigfoot, and always wanted to be a researcher.  My wife is a skeptical believer, which makes us a good team.  We've had lots of experiences, but only one actual sighting.  With each outing, the IBRO team grows closer, like a family, we come away with more questions than answers.  While the truth evades us, we won't stop in our quest for the answers.",
       picture: jimTonya,
-    },
-    {
-      name: "Debbie",
-      description:
-        "Debbie has been interested in Bigfoot for approximately 10 years and joined the IBRO group in 2014 and has been searching and learning about Bigfoot ever since. Debbie plays a major role in the IBRO group as, not only a researcher but assists in organizing group outings, and participates in on-sight investigations, and presentations.",
-      picture: debbie,
-    },
+    }
   ];
 
   return (
