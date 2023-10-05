@@ -8,7 +8,7 @@ import './tickets.css';
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe("pk_test_51Nj2nuBvXyDWVtmIHmJRaKQozVcxcghT53PNrWEd896fMlWKpYRLpAlk6uDaYGS3RvZcai7Ba8xdQyJ74pqPAFjd00dOSpH7Hx", {
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY, {
      stripeAccount: 'acct_1Nj2nuBvXyDWVtmI',
 })
 
@@ -17,7 +17,7 @@ export default function Tickets() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("/api/payments/create-payment-intent", {
+    fetch("https://indiana-bigfoot-conference-server.vercel.app/api/payments/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: [{ id: "ticket" }] }),

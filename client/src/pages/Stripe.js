@@ -16,6 +16,9 @@ export default function CheckoutForm() {
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const date = new Date()
+  console.log(date.getFullYear())
+
   useEffect(() => {
     if (!stripe) {
       return;
@@ -102,7 +105,7 @@ export default function CheckoutForm() {
         options={paymentElementOptions}
       />
       <button
-        disabled={isLoading || !stripe || !elements}
+        disabled={isLoading || !stripe || !elements || date < 2024}
         id="submit"
       >
         <span id="button-text">
@@ -113,6 +116,7 @@ export default function CheckoutForm() {
           )}
         </span>
       </button>
+      <div style={{color: 'red'}}>Tickets are non-refundable</div>
       {/* Show any error or success messages */}
       {message && <div id="payment-message">{message}</div>}
     </form>

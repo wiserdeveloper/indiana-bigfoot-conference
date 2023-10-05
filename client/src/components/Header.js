@@ -37,22 +37,22 @@ const Header = () => {
         }
       >
         <ul>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/">HOME</Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/tickets">TICKETS</Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="speakers">SPEAKERS</Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/vendors">VENDORS</Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/location">LOCATION</Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/ibro">IBRO</Link>
           </li>
         </ul>

@@ -133,6 +133,13 @@
   height: auto;
 }
 
+.the-map {
+  border: none;
+  width: clamp(400px, 90%, 950px);
+  height: 500px;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 250px) {
   .icon-container {
     justify-content: center;
@@ -156,6 +163,9 @@
   .icon-container {
     font-size: xx-large;
     margin-top: 40px;
+  }
+
+  .the-map {
   }
 }
 

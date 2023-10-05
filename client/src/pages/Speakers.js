@@ -10,6 +10,7 @@ import gregYost from "../components/img/greg.jpg";
 import ernie from "../components/img/ernie.jpg";
 
 export default function Speakers() {
+
   const speakers = [
     {
       name: "Adam Davies",
@@ -73,7 +74,7 @@ export default function Speakers() {
                       </picture>
                     </div>
                     <div className="speakers-text">
-                      <h3>{speaker.name}</h3>
+                      <h3 className="speaker-name">{speaker.name}</h3>
                       <p>{speaker.description}</p>
                     </div>
                   </div>

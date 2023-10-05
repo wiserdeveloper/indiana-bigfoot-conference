@@ -15,6 +15,11 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
 
+  .speaker-name {
+    font-size: xx-large;
+    margin-bottom: 15px;
+  }
+
   #speaker {
     font-family: "Solway", serif;
     padding: var(--sectionPadding);

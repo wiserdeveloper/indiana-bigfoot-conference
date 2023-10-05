@@ -66,11 +66,15 @@ const VendorRequestForm = () => {
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Request to be a Vendor for Indiana's 1st Annual Bigfoot
-            Conference
+            Request to be a Vendor for Indiana's 1st Annual Bigfoot Conference
           </h2>
         </div>
-
+        <div className="disclaimer">
+          * If selected, vendors will then have <em>one month</em> to pay a fee
+          of $100 after they are selected. Vendors must be set up by 2PM on
+          Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
+          <strong>The host will supply electricity and tables.</strong>{" "}
+        </div>
         <form
           className="cs-form"
           id="cs-form"
@@ -216,7 +220,7 @@ const VendorRequestForm = () => {
           </label>
 
           <label className="check-label cs-check">
-            Are you willing to donate?
+            Are you willing to donate a door prize? Optional
             <input
               className="cs-checkbox"
               type="checkbox"
@@ -231,6 +235,7 @@ const VendorRequestForm = () => {
           <button className="cs-submit" type="submit">
             {loading ? "Sending..." : "Submit"}
           </button>
+          <div>We kindly request that all payments be deferred until the year 2024.</div>
           {messageSent && (
             <p className="cs-success">
               Thank you for your submission! We will be in touch soon.
@@ -238,18 +243,10 @@ const VendorRequestForm = () => {
           )}
           {error && (
             <p className="cs-error">
-              There was an error sending your message. Please try
-              again later.
+              There was an error sending your message. Please try again later.
             </p>
           )}
         </form>
-      </div>
-      <div className="disclaimer">
-        * If selected, vendors will then have <em>one month</em> to
-        pay a fee of $100 after they are selected. Vendors must be set
-        up by 2PM on Friday at the latest, doors to vendor hall will
-        open at 10am each day.{" "}
-        <strong>The host will supply electricity and tables.</strong>{" "}
       </div>
     </section>
   );

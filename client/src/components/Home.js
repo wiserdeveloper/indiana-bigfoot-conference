@@ -35,7 +35,7 @@ const Home = () => {
           </div>
 
           <div className="flyer-container">
-            <picture className="con-flyer">
+            {/* <picture className="con-flyer">
               <img 
               loading="lazy"
               decoding="async"
@@ -43,7 +43,11 @@ const Home = () => {
               alt="Indy Bigfoot Con Flyer"
               aria-hidden="true"
               />
-            </picture>
+            </picture> */}
+            <div className="vendor-list">
+              <h2>Vendor List</h2>
+              <div>Coming soon....</div> 
+            </div>
             <div className="host-flyer">
               <h2>Special Thanks to IBRO for Hosting Indy Bigfoot Con</h2>
               <picture className="ibro-flyer">
@@ -56,6 +60,9 @@ const Home = () => {
               />
             </picture>
             </div>
+          </div>
+          <div className="dev-team-text-container">
+            <h3>Website created by Alyssa Wiser, Nathan Grandinette, and Tim Quattrochi</h3>
           </div>
         </div>
       </div>
