@@ -69,7 +69,6 @@
   #rsvp .cs-form {
     width: 80%;
     max-width: 66.5rem;
-    margin-top: -10px;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -224,11 +223,9 @@
 }
 
 .disclaimer {
-  font-size: 0.8rem;
   color: #5d4843;
-  margin-bottom: 0.5rem;
+  width: 90%;
   text-align: center;
-  word-break: break-word;
 }
 
 .cs-success {

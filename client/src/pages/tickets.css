@@ -32,8 +32,7 @@
 
 #tickets {
      font-family: "Solway", serif;
-     width: 100%;
-     padding: 50 0;
+     padding: var(--sectionPadding);
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -45,14 +44,12 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 50px;
 }
 
 #tickets .ticket-content {
      /* set text align to left if content needs to be left aligned */
      text-align: center;
      width: 100%;
-     padding: 40px;
      display: flex;
      flex-direction: column;
      /* centers content horizontally, set to flex-start to left align */
