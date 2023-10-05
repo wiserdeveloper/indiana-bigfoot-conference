@@ -17,7 +17,6 @@ export default function CheckoutForm() {
   const [isLoading, setIsLoading] = useState(false);
 
   const date = new Date()
-  console.log(date.getFullYear())
 
   useEffect(() => {
     if (!stripe) {
@@ -105,7 +104,7 @@ export default function CheckoutForm() {
         options={paymentElementOptions}
       />
       <button
-        disabled={isLoading || !stripe || !elements || date < 2024}
+        disabled={isLoading || !stripe || !elements || (date.getFullYear() < 2024)}
         id="submit"
       >
         <span id="button-text">
