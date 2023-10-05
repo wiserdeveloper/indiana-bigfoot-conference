@@ -104,7 +104,7 @@ export default function CheckoutForm() {
         options={paymentElementOptions}
       />
       <button
-        disabled={isLoading || !stripe || !elements || (date.getFullYear() < 2024)}
+        disabled={isLoading || !stripe || !elements || date.getFullYear() < 2024}
         id="submit"
       >
         <span id="button-text">
