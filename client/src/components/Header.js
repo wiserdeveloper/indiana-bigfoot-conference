@@ -53,7 +53,7 @@ const Header = () => {
             <Link to="/location">LOCATION</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
-            <Link to="/hotels">HOTELS</Link>
+            <Link to="/lodging">LODGING</Link>
           </li>
         </ul>
       </div>
