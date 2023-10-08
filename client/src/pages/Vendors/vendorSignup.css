@@ -226,6 +226,8 @@
   color: #5d4843;
   width: 90%;
   text-align: center;
+  font-size: larger;
+  margin-bottom: 40px;
 }
 
 .cs-success {
@@ -244,9 +246,14 @@
   margin-bottom: 1rem;
 }
 
+.delayed-payment-message {
+  color: red;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
   .disclaimer {
-    margin-top: -180px;
+    margin-top: -20px;
+    margin-bottom: -40px;
   }
 }

@@ -68,11 +68,17 @@
      display: block;
 }
 
-#tickets h3 {
+.weekend-pass {
      width: 100%;
      text-align: center;
      margin-bottom: 50px;
      color: var(--primary);
+     margin-top: -20px;
+}
+
+#tickets .sale-date {
+     margin-top: -20px;
+     color: red;
 }
 
 #tickets .ticket-title {
@@ -84,6 +90,7 @@
      /* max width of 24 characters including spaces */
      color: var(--headerColor);
      position: relative;
+     margin-top: 10px;
 }
 
 #tickets p {

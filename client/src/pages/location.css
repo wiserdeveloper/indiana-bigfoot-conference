@@ -140,6 +140,28 @@
   border-radius: 5px;
 }
 
+.drag-map {
+  color: #5d4843;
+  font-weight: 600;
+  margin-bottom: -20px;
+}
+
+.the-seasons-text {
+  text-align: center;
+  color: #5d4843;
+}
+
+.the-seasons-text h1 {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.the-seasons-text p {
+  width: 700px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 250px) {
   .icon-container {
     justify-content: center;
@@ -164,8 +186,15 @@
     font-size: xx-large;
     margin-top: 40px;
   }
-
-  .the-map {
+  
+  .the-seasons-text h1 {
+    font-size: x-large;
+    margin-top: -10px;
+  }
+  
+  .the-seasons-text p {
+    width: 300px;
+    
   }
 }
 

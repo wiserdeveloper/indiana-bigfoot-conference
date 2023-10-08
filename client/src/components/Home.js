@@ -44,10 +44,6 @@ const Home = () => {
               aria-hidden="true"
               />
             </picture> */}
-            <div className="vendor-list">
-              <h2>Vendor List</h2>
-              <div>Coming soon....</div> 
-            </div>
             <div className="host-flyer">
               <h2>Special Thanks to IBRO for Hosting Indy Bigfoot Con</h2>
               <picture className="ibro-flyer">
@@ -59,6 +55,11 @@ const Home = () => {
               aria-hidden="true"
               />
             </picture>
+            </div>
+
+            <div className="vendor-list">
+              <h2>Vendor List</h2>
+              <div>Coming soon....</div> 
             </div>
           </div>
           <div className="dev-team-text-container">

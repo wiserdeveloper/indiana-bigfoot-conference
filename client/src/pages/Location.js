@@ -54,6 +54,13 @@ const Location = () => {
           </div>
         </div>
 
+        <div className="the-seasons-text">
+            <h1>Want to reserve a room at The Seasons Lodge?</h1>
+            <p>The Indiana Bigfoot Conference will be held at The Seasons Lodge on September 27th through the 28th. Looking to stay at the location? Click the link below to be taken to The Seasons Lodge room reservation page.</p>
+            <a href="https://www.seasonslodge.com/rooms/">The Seasons Lodge Reservation Page</a>
+        </div>
+
+        <p className="drag-map">Drag and click map</p>
         <iframe className="the-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3091.7776384035683!2d-86.23966942363309!3d39.20250108593075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1694394214046!5m2!1sen!2sus" width="1500" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
 

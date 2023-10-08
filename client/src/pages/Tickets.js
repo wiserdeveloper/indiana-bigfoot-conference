@@ -42,9 +42,10 @@ export default function Tickets() {
           <h2 className="ticket-title">
             Purchase Conference Tickets
           </h2>
-          <h3>
+          <h3 className="weekend-pass">
             Full Weekend Pass for Only $45!
           </h3>
+          <h3 className="sale-date">TICKETS WILL GO ON SALE JANUARY 1ST, 2024</h3>
           <p className="rsvp-text">
           Embark on an extraordinary journey into the mysterious realms of the unknown at the Indiana Bigfoot Conference! Grab your exclusive weekend pass for just $45 and unlock an immersive experience like no other. Join us on Friday and Saturday to delve into the enigma of the legendary Bigfoot. Engage with local researchers, hear captivating eyewitness accounts, and dive into gripping presentations that unveil the secrets of this elusive creature. With thrilling discussions, gripping evidence, and an opportunity to connect with fellow enthusiasts, this conference is a must for anyone intrigued by the unexplained. Unravel the truth, forge new connections, and become part of an unforgettable quest for the truth. Your adventure awaits at the Indiana Bigfoot Conference – secure your tickets now! #IndyBigfootCon
           </p>

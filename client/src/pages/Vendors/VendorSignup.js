@@ -220,7 +220,7 @@ const VendorRequestForm = () => {
           </label>
 
           <label className="check-label cs-check">
-            Are you willing to donate a door prize? Optional
+            Are you willing to donate a door prize? (Optional)
             <input
               className="cs-checkbox"
               type="checkbox"
@@ -235,7 +235,7 @@ const VendorRequestForm = () => {
           <button className="cs-submit" type="submit">
             {loading ? "Sending..." : "Submit"}
           </button>
-          <div>We kindly request that all payments be deferred until the year 2024.</div>
+          <div className="delayed-payment-message">We kindly request that all payments be deferred until the year 2024.</div>
           {messageSent && (
             <p className="cs-success">
               Thank you for your submission! We will be in touch soon.

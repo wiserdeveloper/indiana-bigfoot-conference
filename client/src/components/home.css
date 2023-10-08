@@ -62,7 +62,7 @@
           letter-spacing: 0.1em;
           font-weight: 700;
           color: var(--primary);
-          margin-bottom: 0.25rem;
+          margin-bottom: 10px;
           display: block;
      }
 
@@ -136,4 +136,5 @@
 
 .vendor-list {
      height: 444px;
+     color: #5d4843;
 }
