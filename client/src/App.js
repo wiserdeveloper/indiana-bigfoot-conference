@@ -10,6 +10,8 @@ import Tickets from "./pages/Tickets";
 import Speakers from "./pages/Speakers";
 import Lodging from "./pages/Lodging";
 import VendorSignup from "./pages/Vendors/VendorSignup";
+import ScrollUp from "./components/Scrollup";
+
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -29,6 +31,9 @@ function App() {
         <Route path="/vendors" element={<VendorSignup />} />
         <Route path="/lodging" element={<Lodging />} />
       </Routes>
+
+      <ScrollUp />
+      
     </Elements>
   );
 }

@@ -56,7 +56,7 @@ const Location = () => {
 
         <div className="the-seasons-text">
             <h1>Want to reserve a room at The Seasons Lodge?</h1>
-            <p>The Indiana Bigfoot Conference will be held at The Seasons Lodge on September 27th through the 28th. Looking to stay at the location? Click the link below to be taken to The Seasons Lodge room reservation page.</p>
+            <p>The Indiana Bigfoot Conference is scheduled to take place at The Seasons Lodge from September 27th through the 28th. If you're planning to stay at this venue during the event, please click the link below to access The Seasons Lodge room reservation page. When making your reservation, kindly mention your affiliation with the Indiana Bigfoot Conference to ensure you receive the relevant accommodations.</p>
             <a href="https://www.seasonslodge.com/rooms/">The Seasons Lodge Reservation Page</a>
         </div>
 

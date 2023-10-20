@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ItemList from "./ItemList";
 
+import { BiSolidHotel } from 'react-icons/bi'
+
 import "./lodging.css";
 
 // HOTELS
