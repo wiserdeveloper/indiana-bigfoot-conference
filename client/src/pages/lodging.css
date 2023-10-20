@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap");
+
+@media only screen and (min-width: 0rem) {
+     #lodging {
+          --primary: #a36700;
+          --primaryLight: #415b44;
+          --secondary: #a36700;
+          --secondaryLight: #e5dece;
+          --headerColor: #5d4843;
+          --bodyTextColor: #4e4b66;
+          --bodyTextColorWhite: #fafbfc;
+          --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+          --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+          --bodyFontSize: 1rem;
+          --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+     }
+
+     #lodging {
+          font-family: "Solway", serif;
+          padding: var(--sectionPadding);
+     }
+
+     #lodging .lodging-container {
+          width: 100%;
+          max-width: 80rem;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: clamp(3rem, 6vw, 4rem);
+     }
+
+     #lodging .lodging-title {
+          font-size: var(--headerFontSize);
+          font-weight: 900;
+          line-height: 1.2em;
+          text-align: inherit;
+          max-width: 24ch;
+          margin: 0 0 1rem 0;
+          color: var(--headerColor);
+          position: relative;
+     }
+
+     #lodging .lodging-content {
+          text-align: center;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     #lodging .lodging-topper {
+          font-size: var(--topperFontSize);
+          line-height: 1.2em;
+          text-transform: uppercase;
+          text-align: inherit;
+          letter-spacing: 0.1em;
+          font-weight: 700;
+          color: var(--primary);
+          margin-bottom: 0.25rem;
+          display: block;
+     }
+}

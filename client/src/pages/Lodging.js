@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ItemList from "./ItemList";
 
 import "./lodging.css";
 
@@ -34,6 +35,7 @@ import friendsCampground from "../components/img/friends-campground.jpg";
 import yellowwoodForest from "../components/img/yellowwood-forest.jpg";
 
 const Lodging = () => {
+     const [activeList, setActiveList] = useState('hotels')
 
      const hotels = [
           {
@@ -241,12 +243,30 @@ const Lodging = () => {
           },
      ]
 
-     return (
-          <section>
-               <div>
+     const handleButtonClick = (listName) => {
+          setActiveList(listName)
+     }
 
-               </div>
-          </section>
+     return (
+          <section id="lodging">
+      <div className="lodging-container">
+        <div className="lodging-content">
+          <span className="lodging-topper">Lodging</span>
+          <h2 className="lodging-title">Nearby Lodging</h2>
+        </div>
+
+        <div>
+          <div className="lodging-btns"> 
+               <button onClick={() => handleButtonClick('hotels')}>Hotels</button>
+               <button onClick={() => handleButtonClick('cabins')}>Cabins</button>
+               <button onClick={() => handleButtonClick('camping')}>Campsites</button>
+          </div>
+
+          <ItemList items={activeList === 'hotels' ? hotels : activeList === 'cabins' ? cabins : camping} />
+        </div>
+
+      </div>
+    </section>
      )
 }
 

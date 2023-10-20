@@ -5,7 +5,7 @@ import "./speakers.css";
 import adamDavies from "../components/img/adam-davies.jpg";
 import charlieRaymond from "../components/img/charlie.jpg";
 import marcDeWerth from "../components/img/mark.jpg";
-import amyBue from "../components/img/amy.jpg";
+import amyBue from "../components/img/amy.jpeg";
 import gregYost from "../components/img/greg.jpg";
 import ernie from "../components/img/ernie.jpg";
 
@@ -32,7 +32,7 @@ export default function Speakers() {
     },
     {
       name: "Amy Bue",
-      description: "TBA",
+      description: "A writer, educator, and Certified Volunteer Naturalist from Northeast Ohio, Amy Bue has been involved in the search for Sasquatch since 2012. Six years later, she cofounded Project Zoobook, a collaboration of Bigfoot investigators working alongside primate zookeepers, primatologists, wildlife biologists, anthropologists, and other scientists. Both her individual work and work with this group earned her the 2018 International Bigfoot Conference’s Dedicated Researcher Award. In 2022, Amy and members of her group spent time with members of Montana’s Blackfeet Nation, both gathering stories of the tribe’s hairy man and investigating encounter sites. They were also featured in the Wall Street Journal as an example of the science going on behind the scenes in the search for evidence of Sasquatch.",
       picture: amyBue,
     },
     {
@@ -42,7 +42,7 @@ export default function Speakers() {
       picture: gregYost,
     },
     {
-      name: "Packman Paranormal",
+      name: "Packman Paranormal (Ernie & Denise Pack)",
       description:
         "Packman Paranormal was formed in 2020 by Denise Brassell and Ernie Pack. We are a paranormal team based in Louisville, KY. Denise has been a paranormal investigator virtually all her life and has investigated with and been a part of several paranormal teams over the years. She’s investigated some of the most notoriously haunted locations in the country from the Lizzie Borden house to Gettysburg to Waverly Hill Sanatorium and beyond. Ernie grew up in the shadows of Waverly Hills Sanatorium, sneaking in as a kid to race wheelchairs in the hallways, and in most recent years worked there filling every role from maintenance, to security, to haunted house actor, to tour guide hosting the private overnight investigations. In his time at Waverly, Ernie has investigated with some of the most prominent and well-known paranormal investigators in the world and has travelled to many other paranormal hotspots over the years.",
       picture: ernie,
