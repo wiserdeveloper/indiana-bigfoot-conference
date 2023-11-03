@@ -74,6 +74,7 @@ const VendorRequestForm = () => {
           of $100 after they are selected. Vendors must be set up by 2PM on
           Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
           <strong>The host will supply electricity and tables.</strong>{" "}
+          <p><strong>Vendors must apply before February 16th, 2024.</strong></p>
         </div>
         <form
           className="cs-form"
