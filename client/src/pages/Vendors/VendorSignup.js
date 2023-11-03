@@ -29,10 +29,10 @@ const VendorRequestForm = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        "template_o52ua0t",
+        "service_y8sapzl",
+        "template_234rowl",
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        "qXWcTR0X7eLecKwHb"
       )
       .then(
         (result) => {

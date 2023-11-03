@@ -38,9 +38,9 @@ export default function Tickets() {
     <section id="tickets">
       <div className="ticket-container">
         <div className="ticket-content">
-          <span className="ticket-topper">Tickets</span>
+          <span className="ticket-topper">Tickets & Merch</span>
           <h2 className="ticket-title">
-            Purchase Conference Tickets
+            Purchase Conference Tickets & Merch
           </h2>
           <h3 className="weekend-pass">
             Full Weekend Pass for Only $45!
@@ -51,11 +51,11 @@ export default function Tickets() {
           </p>
         </div>
       </div>
-      {clientSecret && (
+      {/* {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
           <Stripe />
         </Elements>
-      )}
+      )} */}
     </section>
   );
 }
