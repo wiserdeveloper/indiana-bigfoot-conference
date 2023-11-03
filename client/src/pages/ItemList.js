@@ -4,7 +4,7 @@ import './lodging.css'
 
 const ItemList = ({ items }) => {
      return (
-       <div>
+       <div className="lodging-container2">
          {items.map((item, index) => (
            <div className="lodging-list" key={index}>
              <h3>{item.name}</h3>

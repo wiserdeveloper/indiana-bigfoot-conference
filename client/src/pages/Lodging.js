@@ -251,7 +251,7 @@ const Lodging = () => {
           <section id="lodging">
       <div className="lodging-container">
         <div className="lodging-content">
-          <span className="lodging-topper">STILL IN PROGRESS</span>
+          <span className="lodging-topper">Lodging</span>
           <h2 className="lodging-title">Nearby Lodging</h2>
         </div>
 

@@ -56,8 +56,68 @@
           text-align: inherit;
           letter-spacing: 0.1em;
           font-weight: 700;
-          color: red;
+          color: var(--primary);
           margin-bottom: 0.25rem;
           display: block;
      }
+
+     .lodging-btns {
+          text-align: center;
+          width: 200px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 470px;
+          margin-bottom: 50px;
+     }
+
+     .lodging-btns button {
+          margin: 5px;
+          padding: 10px 20px;
+          background-color: #5d4843;
+          color: #dfd1bb;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+          font-size: 16px;
+     }
+
+     .lodging-list img {
+          width: 500px;
+     }
+
+     .lodging-list {
+          border: 2px solid var(--headerColor);
+          border-radius: 10px;
+          background-color: #ebe6df;
+          width: 600px;
+          text-align: center;
+          padding: 20px;
+          color: #5d4843;
+          margin: 10px;
+          box-sizing: border-box;
+     }
+
+     .lodging-container2 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
 }
+
+/* @media only screen and (min-width: 0rem) {
+     .lodging-list {
+          width: 350px;
+          margin-left: 10px;
+     }
+
+     .lodging-list img {
+          width: 300px;
+     }
+
+     .lodging-btns {
+          margin-left: 20px;
+     }
+} */

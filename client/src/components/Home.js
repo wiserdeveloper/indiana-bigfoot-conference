@@ -45,6 +45,7 @@ const Home = () => {
             </picture> */}
             <div className="host-flyer">
               <h2>Special Thanks to IBRO for Hosting Indy Bigfoot Con</h2>
+              <h2 id="site-link" ><a href="https://ibroindiana.com/">https://ibroindiana.com/</a></h2>
               <picture className="ibro-flyer">
               <img 
               loading="lazy"
