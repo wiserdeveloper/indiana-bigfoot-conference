@@ -75,6 +75,7 @@ const VendorRequestForm = () => {
           Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
           <strong>The host will supply electricity and tables.</strong>{" "}
           <p><strong>Vendors must apply before February 16th, 2024.</strong></p>
+          <p>Your application will be reviewed, notification to you will be made and payment will be required at that time. Thank you for wanting to be a part of our 1st Annual Bigfoot Conference!</p>
         </div>
         <form
           className="cs-form"
