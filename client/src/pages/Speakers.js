@@ -82,6 +82,18 @@ export default function Speakers() {
               </div>
             );
           })}
+        <div className="schedule-container">
+          <h2>Speaker Schedule</h2>
+          <ul>
+            <li>Leroy - 9:00am to 10:00am</li>
+            <li>Greg Yost - 10:15am t0 11:15am</li>
+            <li>Amy Bue - 11:30am to 12:30pm</li>
+            <li>Charlie Raymond - 12:45pm to 1:45pm</li>
+            <li>Marc DeWerth - 2:00pm to 3:00pm</li>
+            <li>Packman Paranormal (Ernie & Denise Pack) - 3:15pm to 4:15pm</li>
+            <li>Adam Davies - 4:30pm to 5:30pm</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
