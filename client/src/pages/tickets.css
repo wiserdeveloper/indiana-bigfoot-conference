@@ -81,6 +81,12 @@
      color: red;
 }
 
+#tickets .shirts-disc {
+     margin-top: 20px;
+     color: #a36700;
+     font-size: larger;
+}
+
 #tickets .ticket-title {
      font-size: var(--headerFontSize);
      width: 100%;
