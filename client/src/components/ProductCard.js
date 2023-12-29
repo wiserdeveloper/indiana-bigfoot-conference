@@ -13,6 +13,14 @@ function ProductCard(props) {
           <Card>
                <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
+                    <img
+                            loading="lazy"
+                            decoding="async"
+                            srcSet={product.image}
+                            alt={product.title}
+                            aria-hidden="true"
+                            id='product-img'
+                          />
                     <Card.Text>${product.price}</Card.Text>
                     { productQuantity > 0 ?
                     <>
