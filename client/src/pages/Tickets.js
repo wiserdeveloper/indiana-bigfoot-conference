@@ -1,50 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-
 import Stripe from "./Stripe";
+import { Row, Col } from 'react-bootstrap';
+import ProductCard from "../components/ProductCard";
+
+import { productsArray } from "./productStore";
+
 import "./tickets.css";
 
-// Make sure to call loadStripe outside of a component’s render to avoid
-// recreating the Stripe object on every render.
-// This is your test publishable API key.
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY, {
-  stripeAccount: "acct_1Nj2nuBvXyDWVtmI",
-});
-
 export default function Tickets() {
-  const [clientSecret, setClientSecret] = useState("");
-  const [products, setProducts] = useState("");
-
-  useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    fetch(
-      "https://indiana-bigfoot-conference-server.vercel.app/api/payments/create-payment-intent",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items: [{ id: "ticket" }] }),
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
-
-    fetch("http://localhost:3001/api/products", {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((data) => setProducts(data.data));
-  }, []);
-
-  const appearance = {
-    theme: "stripe",
-  };
-  const options = {
-    clientSecret,
-    appearance,
-  };
-
-  console.log(products);
+  
 
   return (
     <section id="tickets">
@@ -78,33 +44,16 @@ export default function Tickets() {
             convention, show proof of purchase.
           </h2>
         </div>
-      </div>
-      {/* {clientSecret && (
-        <Elements options={options} stripe={stripePromise}>
-          <Stripe />
-        </Elements>
-      )} */}
-      <div className="productList">
-        {products &&
-          products.map((product) => {
-            return (
-              <div className="productCard">
-                <div className="product">
-                  <img
-                    src={product.images[0]}
-                    alt="The cover of Stubborn Attachments"
-                  />
-                  <div className="description">
-                    <h3>Stubborn Attachments</h3>
-                    <h5>$20.00</h5>
-                  </div>
-                </div>
-                <button type="submit" className="productButton">
-                  Checkout
-                </button>
-              </div>
-            );
-          })}
+
+        {/* STRIPE */}
+      <Row xs={1} md={3} className="g-4">
+        {productsArray.map((product, idx) => (
+          <Col align="center" key={idx}>
+            <ProductCard product={product} />
+          </Col>
+        ))}
+      </Row>
+
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // import pages below
 import Header from "./components/Header";
@@ -11,6 +12,10 @@ import Speakers from "./pages/Speakers";
 import Lodging from "./pages/Lodging";
 import VendorSignup from "./pages/Vendors/VendorSignup";
 import ScrollUp from "./components/Scrollup";
+// stripe checkout pages
+import Success from "./pages/Success";
+import Cancel from "./pages/Cancel";
+import CartProvider from "./CartContext";
 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -19,6 +24,7 @@ const stripePromise = loadStripe("");
 
 function App() {
   return (
+    <CartProvider>
     <Elements stripe={stripePromise}>
       <Header />
 
@@ -30,11 +36,15 @@ function App() {
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/vendors" element={<VendorSignup />} />
         <Route path="/lodging" element={<Lodging />} />
+
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
       </Routes>
 
       <ScrollUp />
       
     </Elements>
+    </CartProvider>
   );
 }
 
