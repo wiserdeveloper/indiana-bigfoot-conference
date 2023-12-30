@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
-import Stripe from "./Stripe";
+// import { loadStripe } from "@stripe/stripe-js";
+// import { Elements } from "@stripe/react-stripe-js";
+// import Stripe from "./Stripe";
 import { Row, Col } from 'react-bootstrap';
 import ProductCard from "../components/ProductCard";
 
@@ -20,9 +20,6 @@ export default function Tickets() {
           <h2 className="ticket-title">Purchase Conference Tickets & Merch</h2>
           <h3 className="weekend-pass">
             Full Weekend Pass Including Speaker Events on Saturday for Only $50!
-          </h3>
-          <h3 className="sale-date">
-            TICKETS WILL GO ON SALE JANUARY 1ST, 2024
           </h3>
           <p className="rsvp-text">
             Embark on an extraordinary journey into the mysterious realms of the

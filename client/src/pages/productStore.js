@@ -6,45 +6,56 @@ import whiteVShirt from "../components/img/white-shirt-v.jpg";
 import greenHoodie from "../components/img/green-hoodie.jpg";
 import whiteHoodie from "../components/img/white-hoodie.jpg";
 
+// Conference Hoodie (White) Key: price_1OS3M5BvXyDWVtmIhdSMDPOO
+// Conference Hoodie (Green) Key: price_1OS3LmBvXyDWVtmIrhn21QO0
+
+// Conference V-Neck Shirt (White) Key: price_1OS3LKBvXyDWVtmIUvplYWK9
+// Conference V-Neck Shirt (Green) Key: price_1OS3KvBvXyDWVtmIGe6dU8Bm
+
+// Conference Shirt (White) Key: price_1OS3KfBvXyDWVtmI1TyKMtSC
+// Conference Shirt (Green) Key: price_1OS3KOBvXyDWVtmIY5xHf4xZ
+
+// Ticket Key: price_1OSpe8BvXyDWVtmI6n85uySt
+
 const productsArray = [
      {
-          id: "1",
+          id: "price_1OSpe8BvXyDWVtmI6n85uySt",
           title: "Ticket",
           image: ticket,
           price: 50.00
      },
      {
-          id: "2",
+          id: "price_1OS3KOBvXyDWVtmIY5xHf4xZ",
           title: "Shirt (Green)",
           image: greenShirt,
           price: 30.00
      },
      {
-          id: "3",
+          id: "price_1OS3KfBvXyDWVtmI1TyKMtSC",
           title: "Shirt (White)",
           image: whiteShirt,
           price: 30.00
      },
      {
-          id: "3",
+          id: "price_1OS3KvBvXyDWVtmIGe6dU8Bm",
           title: "V-Neck Shirt (Green)",
           image: greenVShirt,
           price: 30.00
      },
      {
-          id: "4",
+          id: "price_1OS3LKBvXyDWVtmIUvplYWK9",
           title: "V-Neck Shirt (White)",
           image: whiteVShirt,
           price: 30.00
      },
      {
-          id: "5",
+          id: "price_1OS3LmBvXyDWVtmIrhn21QO0",
           title: "Hoodie (Green)",
           image: greenHoodie,
           price: 45.00
      },
      {
-          id: "6",
+          id: "price_1OS3M5BvXyDWVtmIhdSMDPOO",
           title: "Hoodie (White)",
           image: whiteHoodie,
           price: 45.00

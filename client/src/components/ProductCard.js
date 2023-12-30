@@ -2,6 +2,8 @@ import { Card, Button, Form, Row, Col } from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import { useContext } from 'react';
 
+import "../pages/tickets.css";
+
 function ProductCard(props) {
      const product = props.product
      const cart = useContext(CartContext)
@@ -11,7 +13,7 @@ function ProductCard(props) {
 
      return (
           <Card>
-               <Card.Body>
+               <Card.Body className='card-body'>
                     <Card.Title>{product.title}</Card.Title>
                     <img
                             loading="lazy"
@@ -21,14 +23,14 @@ function ProductCard(props) {
                             aria-hidden="true"
                             id='product-img'
                           />
-                    <Card.Text>${product.price}</Card.Text>
+                    <Card.Text className='card-price'>${product.price}</Card.Text>
                     { productQuantity > 0 ?
                     <>
                     <Form as={Row}>
                          <Form.Label column="true" sm="6">In Cart: {productQuantity}</Form.Label>
                          <Col sm="6">
-                              <Button sm="6" onClick={() => cart.addOneToCart(product.id)} className='mx-2'>+</Button>
-                              <Button sm="6" onClick={() => cart.removeOneFromCart(product.id)} className='mx-2'>-</Button>
+                              <Button sm="2" onClick={() => cart.addOneToCart(product.id)} className='btn-sm mx-2'>+</Button>
+                              <Button sm="2" onClick={() => cart.removeOneFromCart(product.id)} className='btn-sm mx-2'>-</Button>
                          </Col>
                     </Form>
                     <Button varient="danger" onClick={() => cart.deleteFromCart(product.id)} className='my-2'>Remove from cart</Button>
