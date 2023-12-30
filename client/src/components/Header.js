@@ -1,9 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import { CartContext } from "../CartContext";
+import CartProduct from "./CartProduct";
+
+import { Button, Container, Navbar, Modal } from 'react-bootstrap'
 
 const Header = () => {
+  const cart = useContext(CartContext)
+
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
+  const checkout = async () => {
+    await fetch('http://localhost:3001/checkout', { // Make sure to change to deployed domain when in live mode
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({items: cart.items})
+    }).then((response) => {
+        return response.json();
+    }).then((response) => {
+        if(response.url) {
+            window.location.assign(response.url); // This is forwarding the user to Stripe to finish checkout
+        }
+    });
+}
+
+  const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
 
   return (
     <nav className="navigation">
@@ -55,7 +83,34 @@ const Header = () => {
           <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/lodging">LODGING</Link>
           </li>
+          <li onClick={() => setIsNavExpanded(false)}>
+            <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
+          </li>
         </ul>
+
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Shopping Cart</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            {productsCount > 0 ?
+                <>
+                    <p>Items in your cart:</p>
+                    {cart.items.map((currentProduct, idx) => (
+                      <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
+                    ))}
+
+                    <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+
+                    <Button varient="success" onClick={checkout}>
+                      Checkout
+                    </Button>
+                </>
+            :
+                <h1>There are no items in your cart.</h1>
+            }
+          </Modal.Body>
+        </Modal>
       </div>
     </nav>
   );
