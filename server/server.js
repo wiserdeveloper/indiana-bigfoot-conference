@@ -14,19 +14,14 @@ app.use(express.json());
 app.use("/api", require("./routes/index"));
 
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });
 
 // stripe method
-app.post("/api/checkout", async (req, res) => {
+app.post("/checkout", async (req, res) => {
 
-  const session = await stripe.checkout.sessions.create({
-    line_items: lineItems,
-    mode: 'payment',
-    success_url: "http://localhost:3000/success", // update to indianabigfootconference.com when not in testing
-    cancel_url: "http://localhost:3000/cancel" // ditto ^^
-  })
+  console.log(req.body);
 
   const items = req.body.items;
   let lineItems = []
@@ -39,15 +34,20 @@ app.post("/api/checkout", async (req, res) => {
     )
   })
 
-  // res.send(JSON.stringify({
-  //   url: session.url
-  // }))
+  const session = await stripe.checkout.sessions.create({
+    line_items: lineItems,
+    mode: 'payment',
+    success_url: "http://localhost:3000/success", // update to indianabigfootconference.com when not in testing
+    cancel_url: "http://localhost:3000/cancel" // ditto ^^
+  })
 
-  res.redirect(303, session.url)
-
-  console.log(req.body)
+  res.send(JSON.stringify({
+    url: session.url
+  }));
 
 })
+
+app.listen(3001, () => ("Listening on port 3001!"))
 
 module.exports = app;
 

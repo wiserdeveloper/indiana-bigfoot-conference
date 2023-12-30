@@ -5,9 +5,10 @@ import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
 import { Button, Container, Navbar, Modal } from 'react-bootstrap'
-// import { checkout } from "../../../server/routes";
 
 const Header = () => {
+  const cart = useContext(CartContext)
+
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -18,19 +19,17 @@ const Header = () => {
     await fetch('http://localhost:3001/checkout', { // Make sure to change to deployed domain when in live mode
         method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({items: cart.items})
     }).then((response) => {
-      return response.json()
+        return response.json();
     }).then((response) => {
-      if (response.url) {
-        window.location.assign(response.url) // This is forwarding the user to Stripe to finish checkout
-      }
-    })
-  }
-
-  const cart = useContext(CartContext)
+        if(response.url) {
+            window.location.assign(response.url); // This is forwarding the user to Stripe to finish checkout
+        }
+    });
+}
 
   const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
 
