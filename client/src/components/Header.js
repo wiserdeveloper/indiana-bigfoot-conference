@@ -4,6 +4,8 @@ import "./header.css";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
+import { FaShoppingCart } from "react-icons/fa";
+
 import { Button, Container, Navbar, Modal } from 'react-bootstrap'
 
 const Header = () => {
@@ -84,15 +86,15 @@ const Header = () => {
             <Link to="/lodging">LODGING</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
-            <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
+            <Button onClick={handleShow}><FaShoppingCart /> ({productsCount} Items)</Button>
           </li>
         </ul>
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Shopping Cart</Modal.Title>
+            <Modal.Title style={{ textAlign: 'center', width: '100%' }}>Shopping Cart</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="text-center">
             {productsCount > 0 ?
                 <>
                     <p>Items in your cart:</p>
