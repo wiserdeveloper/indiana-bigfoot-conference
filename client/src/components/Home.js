@@ -62,6 +62,7 @@ const Home = () => {
               <div>Coming soon....</div> 
             </div>
           </div>
+
           <div className="dev-team-text-container">
             <h3>Website created by Alyssa Wiser, Nathan Grandinette, and Tim Quattrochi</h3>
           </div>
