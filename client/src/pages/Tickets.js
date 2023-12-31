@@ -18,22 +18,10 @@ export default function Tickets() {
           <span className="ticket-topper">Tickets & Merch</span>
           <h2 className="ticket-title">Purchase Conference Tickets & Merch</h2>
           <h3 className="weekend-pass">
-            Full Weekend Pass Including Speaker Events on Saturday for Only $50!
+            Buy tickets for Saturday for only $50!
           </h3>
           <p className="rsvp-text">
-            Embark on an extraordinary journey into the mysterious realms of the
-            unknown at the Indiana Bigfoot Conference! Grab your exclusive
-            weekend pass for just $50 and unlock an immersive experience like no
-            other. Join us on Friday and Saturday to delve into the enigma of
-            the legendary Bigfoot. Engage with local researchers, hear
-            captivating eyewitness accounts, and dive into gripping
-            presentations that unveil the secrets of this elusive creature. With
-            thrilling discussions, gripping evidence, and an opportunity to
-            connect with fellow enthusiasts, this conference is a must for
-            anyone intrigued by the unexplained. Unravel the truth, forge new
-            connections, and become part of an unforgettable quest for the
-            truth. Your adventure awaits at the Indiana Bigfoot Conference –
-            secure your tickets now! #IndyBigfootCon
+          Uncover the mysteries of Bigfoot at the Indiana Bigfoot Conference! Friday features a free Town Hall Meeting, a forum for sharing stories and experiences. On Saturday, expert speakers will delve into evidence and insights surrounding this enigmatic creature. Engage with researchers, witness compelling evidence showcases, and explore merchandise and vendors. Join us for a weekend of discovery and community as we unravel the legend of Bigfoot! Tickets available now!
           </p>
           <h2 className="shirts-disc">
             Shirts and hoodies will be available for pick up during the
