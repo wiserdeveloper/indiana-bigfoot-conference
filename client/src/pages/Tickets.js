@@ -2,15 +2,22 @@ import React, { useState, useEffect } from "react";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 // import Stripe from "./Stripe";
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
 
-import { productsArray } from "./productStore";
+// import { productsArray } from "./productStore";
 
 import "./tickets.css";
 
 export default function Tickets() {
-  
+  const [productsArray, setProductsArray] = useState("")
+  useEffect(() => {
+    fetch("http://localhost:3001/api/products", {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((data) => setProductsArray(data.data));
+  }, []);
 
   return (
     <section id="tickets">
@@ -43,14 +50,13 @@ export default function Tickets() {
         </div>
 
         {/* STRIPE */}
-      <Row xs={1} md={3} className="g-4">
-        {productsArray.map((product, idx) => (
-          <Col align="center" key={idx}>
-            <ProductCard product={product} />
-          </Col>
-        ))}
-      </Row>
-
+        <Row xs={1} md={3} className="g-4">
+          {productsArray && productsArray.map((product, idx) => (
+            <Col align="center" key={idx}>
+              <ProductCard product={product} />
+            </Col>
+          ))}
+        </Row>
       </div>
     </section>
   );
