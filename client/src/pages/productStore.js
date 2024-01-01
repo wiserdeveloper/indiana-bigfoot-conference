@@ -22,7 +22,8 @@ const productsArray = [
           id: "price_1OSpe8BvXyDWVtmI6n85uySt",
           title: "Ticket",
           image: ticket,
-          price: 50.00
+          price: 50.00,
+          size: ["small", "medium", "large", "xl", "2xl", "3xl"]
      },
      {
           id: "price_1OS3KOBvXyDWVtmIY5xHf4xZ",

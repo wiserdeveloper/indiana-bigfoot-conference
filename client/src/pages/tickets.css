@@ -30,6 +30,11 @@
      }
 }
 
+.dropdown {
+     margin-bottom: 40px;
+     margin-top: 10px;
+}
+
 .productList {
      display: flex;
      flex-wrap: wrap;

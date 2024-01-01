@@ -10,6 +10,15 @@ import { productsArray } from "./productStore";
 import "./tickets.css";
 
 export default function Tickets() {
+  const [selectedSize, setSelectedSize] = useState('all')
+
+  const handleSizeChange = event => {
+    setSelectedSize(event.target.value)
+  }
+
+  const filteredProducts = productsArray.filter(
+    product => selectedSize === 'all' || product.size.includes(selectedSize)
+  );
 
   return (
     <section id="tickets">
@@ -28,10 +37,23 @@ export default function Tickets() {
             convention, show proof of purchase.
           </h2>
         </div>
+        
+        <div className="dropdown">
+          <label htmlFor="size-dropdown">Select Size:</label>
+          <select id="size-dropdown" onChange={handleSizeChange}>
+            <option value="all">All Sizes</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">XL</option>
+            <option value="2xl">2XL</option>
+            <option value="3xl">3XL</option>
+          </select>
+        </div>
 
         {/* STRIPE */}
         <Row xs={1} md={3} className="g-4">
-        {productsArray.map((product, idx) => (
+        {filteredProducts.map((product, idx) => (
           <Col align="center" key={idx}>
             <ProductCard product={product} />
           </Col>
