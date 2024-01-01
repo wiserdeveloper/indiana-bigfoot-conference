@@ -1,13 +1,13 @@
 require("dotenv").config()
 
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const stripe = require("stripe")('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')
 const app = express();
 
 const port = 3001;
 
-app.use(cors());
+// app.use(cors());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
