@@ -2,6 +2,8 @@ import { Card, Button, Form, Row, Col } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext, useEffect, useState } from "react";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "../pages/tickets.css";
 
 function ProductCard(props) {
