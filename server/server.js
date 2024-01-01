@@ -41,8 +41,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: 'payment',
-    success_url: "/success", // update to indianabigfootconference.com when not in testing
-    cancel_url: "/cancel" // ditto ^^
+    success_url: "https://www.indianabigfootconference.com/success", // update to indianabigfootconference.com when not in testing
+    cancel_url: "https://www.indianabigfootconference.com/cancel" // ditto ^^
   })
 
   console.log(session)
