@@ -32,7 +32,9 @@ const Header = () => {
         if(response.url) {
             window.location.assign(response.url); // This is forwarding the user to Stripe to finish checkout
         }
-    });
+    }).catch((error) => {
+      console.log(error)
+    })
 }
 
   const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
