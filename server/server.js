@@ -1,22 +1,24 @@
 require("dotenv").config()
 
 const express = require("express");
-// const cors = require("cors");
+const cors = require("cors");
 const stripe = require("stripe")('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')
 const app = express();
 
 const port = 3001;
 
-// app.use(cors());
+const corsOptions = {
+  origin: "https://www.indianabigfootconference.com/",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use("/api", require("./routes/index"));
-
-
-// app.listen(port, () => {
-//   console.log(`Server is running on port ${port}`);
-// });
 
 // stripe method
 app.post("/checkout", async (req, res) => {
