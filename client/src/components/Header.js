@@ -20,7 +20,7 @@ const Header = () => {
   const handleShow = () => setShow(true)
 
   const checkout = async () => {
-    await fetch('https://indiana-bigfoot-conference-server.vercel.app//checkout', { // Make sure to change to deployed domain when in live mode
+    await fetch('https://indiana-bigfoot-conference-server.vercel.app/checkout', { // Make sure to change to deployed domain when in live mode
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
