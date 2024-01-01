@@ -14,7 +14,7 @@ const port = 3001;
 //   optionsSuccessStatus: 200
 // };
 
-app.use(cors({origin: "*"}))
+app.use(cors({origin: ["https://www.indianabigfootconference.com/", "http://localhost:3000/", "http://localhost:3000"]}))
 
 // app.use(cors(corsOptions));
 app.use(express.static("public"));
