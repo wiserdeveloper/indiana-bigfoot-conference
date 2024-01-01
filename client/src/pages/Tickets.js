@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { productsArray } from "./productStore";
 
 import "./tickets.css";

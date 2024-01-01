@@ -6,6 +6,8 @@ import CartProduct from "./CartProduct";
 
 import { FaShoppingCart } from "react-icons/fa";
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import { Button, Container, Navbar, Modal } from 'react-bootstrap'
 
 const Header = () => {

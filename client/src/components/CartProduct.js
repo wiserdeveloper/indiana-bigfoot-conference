@@ -3,6 +3,8 @@ import { CartContext } from "../CartContext"
 import { useContext } from "react"
 import { getProductData } from "../pages/productStore"
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 function CartProduct(props) {
      const cart = useContext(CartContext)
      const id = props.id
