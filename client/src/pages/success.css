@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Solway:wght@400;700;800&display=swap");
+
+@media only screen and (min-width: 0rem) {
+     .success-page {
+          text-align: center;
+          font-family: "Solway", serif;
+          color: #5d4843;
+     }
+
+     .success-page h1 {
+          margin-top: 150px;
+     }
+
+     .cancel-page {
+          text-align: center;
+          font-family: "Solway", serif;
+          color: #5d4843;
+     }
+
+     .cancel-page h1 {
+          margin-top: 150px;
+     }
+}
