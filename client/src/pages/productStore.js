@@ -282,6 +282,92 @@ const productsArray = [
           price: 45.00,
           size: "3xl"
      },
+     // 4XL
+     {
+          id: "price_1OUFA5BvXyDWVtmIOgykLIMG",
+          title: "4XL Shirt (Green)",
+          image: greenShirt,
+          price: 30.00,
+          size: "4xl"
+     },
+     {
+          id: "price_1OUFAhBvXyDWVtmI1nJs6qbT",
+          title: "4XL Shirt (White)",
+          image: whiteShirt,
+          price: 30.00,
+          size: "4xl"
+     },
+     {
+          id: "price_1OUFBSBvXyDWVtmIIqqi4PZB",
+          title: "4XL V-Neck Shirt (Green)",
+          image: greenVShirt,
+          price: 30.00,
+          size: "4xl"
+     },
+     {
+          id: "price_1OUFC6BvXyDWVtmIEVmJYRmk",
+          title: "4XL V-Neck Shirt (White)",
+          image: whiteVShirt,
+          price: 30.00,
+          size: "4xl"
+     },
+     {
+          id: "price_1OUFCrBvXyDWVtmIwNRuXXnm",
+          title: "4XL Hoodie (Green)",
+          image: greenHoodie,
+          price: 45.00,
+          size: "4xl"
+     },
+     {
+          id: "price_1OUFDGBvXyDWVtmIQD5JEuR6",
+          title: "4XL Hoodie (White)",
+          image: whiteHoodie,
+          price: 45.00,
+          size: "4xl"
+     },
+     // 5XL
+     {
+          id: "price_1OUFEgBvXyDWVtmIWzwzweKC",
+          title: "5XL Shirt (Green)",
+          image: greenShirt,
+          price: 30.00,
+          size: "5xl"
+     },
+     {
+          id: "price_1OUFF6BvXyDWVtmIVSC774gP",
+          title: "5XL Shirt (White)",
+          image: whiteShirt,
+          price: 30.00,
+          size: "5xl"
+     },
+     {
+          id: "price_1OUFFZBvXyDWVtmIp3CPPfzu",
+          title: "5XL V-Neck Shirt (Green)",
+          image: greenVShirt,
+          price: 30.00,
+          size: "5xl"
+     },
+     {
+          id: "price_1OUFFxBvXyDWVtmIWHJM6Q6i",
+          title: "5XL V-Neck Shirt (White)",
+          image: whiteVShirt,
+          price: 30.00,
+          size: "5xl"
+     },
+     {
+          id: "price_1OUFHUBvXyDWVtmInzAcqRJ3",
+          title: "5XL Hoodie (Green)",
+          image: greenHoodie,
+          price: 45.00,
+          size: "5xl"
+     },
+     {
+          id: "price_1OUFI4BvXyDWVtmIfxRTnaPK",
+          title: "5XL Hoodie (White)",
+          image: whiteHoodie,
+          price: 45.00,
+          size: "5xl"
+     },
 ]
 
 function getProductData(id) {

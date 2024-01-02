@@ -45,8 +45,6 @@ app.post("/checkout", async (req, res) => {
     cancel_url: "https://www.indianabigfootconference.com/cancel" // ditto ^^
   })
 
-  console.log(session)
-
   res.send(JSON.stringify({
     url: session.url
   }));
