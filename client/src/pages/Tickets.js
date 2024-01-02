@@ -8,6 +8,7 @@ import ProductCard from "../components/ProductCard";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { productsArray } from "./productStore";
+import { checkout } from "../components/Header";
 
 import "./tickets.css";
 
@@ -19,7 +20,7 @@ export default function Tickets() {
   }
 
   const filteredProducts = productsArray.filter(
-    product => selectedSize === 'all' || product.size.includes(selectedSize)
+    product => selectedSize === 'all' || product.size === selectedSize || product.title === 'Ticket'
   );
 
   return (
@@ -50,6 +51,8 @@ export default function Tickets() {
             <option value="xl">XL</option>
             <option value="2xl">2XL</option>
             <option value="3xl">3XL</option>
+            <option value="4xl">4XL</option>
+            <option value="5xl">5XL</option>
           </select>
         </div>
 
