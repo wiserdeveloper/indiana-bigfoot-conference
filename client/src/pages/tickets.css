@@ -124,6 +124,11 @@
      font-size: larger;
 }
 
+#tickets .refund-disc {
+     color: red;
+     font-size: larger;
+}
+
 #tickets .ticket-title {
      font-size: var(--headerFontSize);
      width: 100%;
