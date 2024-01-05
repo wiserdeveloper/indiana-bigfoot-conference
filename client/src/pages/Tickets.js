@@ -39,6 +39,7 @@ export default function Tickets() {
             Shirts and hoodies will be available for pick up during the
             convention, show proof of purchase.
           </h2>
+          <h2 className="refund-disc">No refunds.</h2>
         </div>
         
         <div className="dropdown">
