@@ -34,7 +34,7 @@ const productsArray = [
      },
      {
           id: "price_1OTotsBvXyDWVtmIPBeNAHHc",
-          title: "Small Shirt (White)",
+          title: "Small Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "small"
@@ -48,7 +48,7 @@ const productsArray = [
      },
      {
           id: "price_1OTotZBvXyDWVtmIXw1s6i4z",
-          title: "Small V-Neck Shirt (White)",
+          title: "Small V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "small"
@@ -62,7 +62,7 @@ const productsArray = [
      },
      {
           id: "price_1OTotCBvXyDWVtmID6MCSY1O",
-          title: "Small Hoodie (White)",
+          title: "Small Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "small"
@@ -77,7 +77,7 @@ const productsArray = [
      },
      {
           id: "price_1OToqWBvXyDWVtmIDCQkvaJl",
-          title: "Medium Shirt (White)",
+          title: "Medium Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "medium"
@@ -91,7 +91,7 @@ const productsArray = [
      },
      {
           id: "price_1OToqtBvXyDWVtmIj8za514c",
-          title: "Medium V-Neck Shirt (White)",
+          title: "Medium V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "medium"
@@ -105,7 +105,7 @@ const productsArray = [
      },
      {
           id: "price_1OTorHBvXyDWVtmIlyQy6NLY",
-          title: "Medium Hoodie (White)",
+          title: "Medium Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "medium"
@@ -120,7 +120,7 @@ const productsArray = [
      },
      {
           id: "price_1OTomnBvXyDWVtmIOTE9nm01",
-          title: "Large Shirt (White)",
+          title: "Large Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "large"
@@ -134,7 +134,7 @@ const productsArray = [
      },
      {
           id: "price_1OTon6BvXyDWVtmIwYy4Ra1o",
-          title: "Large V-Neck Shirt (White)",
+          title: "Large V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "large"
@@ -148,7 +148,7 @@ const productsArray = [
      },
      {
           id: "price_1OTonMBvXyDWVtmILlaNWoCe",
-          title: "Large Hoodie (White)",
+          title: "Large Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "large"
@@ -163,7 +163,7 @@ const productsArray = [
      },
      {
           id: "price_1OTokmBvXyDWVtmINataXnJD",
-          title: "XL Shirt (White)",
+          title: "XL Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "xl"
@@ -177,7 +177,7 @@ const productsArray = [
      },
      {
           id: "price_1OTokzBvXyDWVtmItuvi6Sti",
-          title: "XL V-Neck Shirt (White)",
+          title: "XL V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "xl"
@@ -191,7 +191,7 @@ const productsArray = [
      },
      {
           id: "price_1OTolBBvXyDWVtmIizd29Wqe",
-          title: "XL Hoodie (White)",
+          title: "XL Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "xl"
@@ -206,7 +206,7 @@ const productsArray = [
      },
      {
           id: "price_1OToi9BvXyDWVtmIAjYKYTU7",
-          title: "2XL Shirt (White)",
+          title: "2XL Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "2xl"
@@ -220,7 +220,7 @@ const productsArray = [
      },
      {
           id: "price_1OToiNBvXyDWVtmIZ0pTZfKo",
-          title: "2XL V-Neck Shirt (White)",
+          title: "2XL V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "2xl"
@@ -234,7 +234,7 @@ const productsArray = [
      },
      {
           id: "price_1OToiaBvXyDWVtmIngfbdl5v",
-          title: "2XL Hoodie (White)",
+          title: "2XL Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "2xl"
@@ -249,7 +249,7 @@ const productsArray = [
      },
      {
           id: "price_1OToflBvXyDWVtmIDhKzpJIp",
-          title: "3XL Shirt (White)",
+          title: "3XL Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "3xl"
@@ -263,7 +263,7 @@ const productsArray = [
      },
      {
           id: "price_1OTofyBvXyDWVtmImOjsPcfi",
-          title: "3XL V-Neck Shirt (White)",
+          title: "3XL V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "3xl"
@@ -277,7 +277,7 @@ const productsArray = [
      },
      {
           id: "price_1OTogTBvXyDWVtmInrgjjKep",
-          title: "3XL Hoodie (White)",
+          title: "3XL Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "3xl"
@@ -292,7 +292,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFAhBvXyDWVtmI1nJs6qbT",
-          title: "4XL Shirt (White)",
+          title: "4XL Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "4xl"
@@ -306,7 +306,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFC6BvXyDWVtmIEVmJYRmk",
-          title: "4XL V-Neck Shirt (White)",
+          title: "4XL V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "4xl"
@@ -320,7 +320,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFDGBvXyDWVtmIQD5JEuR6",
-          title: "4XL Hoodie (White)",
+          title: "4XL Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "4xl"
@@ -335,7 +335,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFF6BvXyDWVtmIVSC774gP",
-          title: "5XL Shirt (White)",
+          title: "5XL Shirt (Tan)",
           image: whiteShirt,
           price: 30.00,
           size: "5xl"
@@ -349,7 +349,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFFxBvXyDWVtmIWHJM6Q6i",
-          title: "5XL V-Neck Shirt (White)",
+          title: "5XL V-Neck Shirt (Tan)",
           image: whiteVShirt,
           price: 30.00,
           size: "5xl"
@@ -363,7 +363,7 @@ const productsArray = [
      },
      {
           id: "price_1OUFI4BvXyDWVtmIfxRTnaPK",
-          title: "5XL Hoodie (White)",
+          title: "5XL Hoodie (Tan)",
           image: whiteHoodie,
           price: 45.00,
           size: "5xl"
