@@ -30,6 +30,43 @@
      }
 }
 
+.dropdown {
+     margin-bottom: 40px;
+     margin-top: 10px;
+}
+
+.productList {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+.product {
+     display: flex;
+     justify-content: flex-start;
+     border-radius: 10px 10px 0 0;
+     padding: 10px;
+     gap: 40px;
+     height: 100px;
+     background-color: white;
+}
+
+.product img {
+     width: 75px;
+}
+
+.productCard {
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+}
+
+.productButton {
+     max-width: 100%;
+     border-radius: 0 0 10px 10px;
+}
+
 #tickets {
      font-family: "Solway", serif;
      padding: var(--sectionPadding);
@@ -73,12 +110,23 @@
      text-align: center;
      margin-bottom: 50px;
      color: var(--primary);
-     margin-top: -20px;
+     margin-top: 10px;
 }
 
 #tickets .sale-date {
      margin-top: -20px;
      color: red;
+}
+
+#tickets .shirts-disc {
+     margin-top: 20px;
+     color: #a36700;
+     font-size: larger;
+}
+
+#tickets .refund-disc {
+     color: red;
+     font-size: larger;
 }
 
 #tickets .ticket-title {
@@ -103,6 +151,10 @@
      margin: 0;
      color: var(--headerColor);
      font-weight: 700;
+}
+
+.card-body {
+     height: 300px;
 }
 
 @media (min-width: 1500px) {
