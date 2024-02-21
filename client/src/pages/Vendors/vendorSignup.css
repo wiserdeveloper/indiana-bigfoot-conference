@@ -189,6 +189,38 @@
     list-style: none;
     position: relative;
   }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .button:hover {
+    background-color: #0163cc;
+  }
+  
+
+  .vendor-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .vendor-card {
+    background-color: rgb(247, 247, 247);
+    padding: 40px;
+    border-radius: 15px;
+  }
+
+  .vendor-card h4 {
+    margin-bottom: 20px;
+    color: #5d4843;
+    font-weight: 400;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {

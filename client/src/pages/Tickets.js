@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { Elements } from "@stripe/react-stripe-js";
 // import Stripe from "./Stripe";
 import { Row, Col } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
-
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import { productsArray } from "./productStore";
-import { checkout } from "../components/Header";
-
 import "./tickets.css";
 
 export default function Tickets() {
