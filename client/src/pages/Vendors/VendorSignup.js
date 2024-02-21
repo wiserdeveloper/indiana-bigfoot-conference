@@ -5,68 +5,82 @@ import emailjs from "@emailjs/browser";
 
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete for accessibility, google loves a11y for ranking.
 
-const initialFormState = {
-  companyName: "",
-  contactName: "",
-  phone: "",
-  email: "",
-  webUrl: "",
-  location: "",
-  bringing: "",
-  willDonate: false,
-};
+// const initialFormState = {
+//   companyName: "",
+//   contactName: "",
+//   phone: "",
+//   email: "",
+//   webUrl: "",
+//   location: "",
+//   bringing: "",
+//   willDonate: false,
+// };
+
+const vendorArray = [
+  {
+    id: "",
+    title: "Outside Vendor",
+    price: 100.00
+  },
+  {
+    id: "",
+    title: "Inside Vendor",
+    price: 100.00
+  }
+]
+
 const VendorRequestForm = () => {
-  const [formData, setFormData] = useState(initialFormState);
-  const [messageSent, setMessageSent] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [formData, setFormData] = useState(initialFormState);
+  // const [messageSent, setMessageSent] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(false);
 
-  const form = useRef();
+  // const form = useRef();
 
-  const handleSubmit = (e) => {
-    setLoading(true);
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   setLoading(true);
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_y8sapzl",
-        "template_234rowl",
-        form.current,
-        "qXWcTR0X7eLecKwHb"
-      )
-      .then(
-        (result) => {
-          if (result.text === "OK") {
-            setMessageSent(true);
-            form.current.reset();
-            setLoading(false);
-          }
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error.text);
-          setError(true);
-        }
-      );
-    setFormData(initialFormState);
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_y8sapzl",
+  //       "template_234rowl",
+  //       form.current,
+  //       "qXWcTR0X7eLecKwHb"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         if (result.text === "OK") {
+  //           setMessageSent(true);
+  //           form.current.reset();
+  //           setLoading(false);
+  //         }
+  //       },
+  //       (error) => {
+  //         setLoading(false);
+  //         console.log(error.text);
+  //         setError(true);
+  //       }
+  //     );
+  //   setFormData(initialFormState);
+  // };
 
-  const handleChange = (e) => {
-    const { name, value, checked } = e.target;
+  // const handleChange = (e) => {
+  //   const { name, value, checked } = e.target;
 
-    setFormData({
-      ...formData,
-      [name]: value,
-      willDonate: checked,
-    });
-  };
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //     willDonate: checked,
+  //   });
+  // };
 
   return (
     <section id="rsvp">
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Request to be a Vendor for Indiana's 1st Annual Bigfoot Conference
+            Vendor submissions are now closed
           </h2>
         </div>
         <div className="disclaimer">
@@ -74,10 +88,9 @@ const VendorRequestForm = () => {
           of $100 after they are selected. Vendors must be set up by 2PM on
           Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
           <strong>The host will supply electricity and tables.</strong>{" "}
-          <p><strong>Vendors must apply before February 16th, 2024.</strong></p>
-          <p>Your application will be reviewed, notification to you will be made and payment will be required at that time. Thank you for wanting to be a part of our 1st Annual Bigfoot Conference!</p>
+          <p>If you have been selected to be a vendor for the Indiana Bigfoot Conference, please decide if you wish to set up outside or inside. A link to the payment form will be up soon.</p>
         </div>
-        <form
+        {/* <form
           className="cs-form"
           id="cs-form"
           ref={form}
@@ -248,7 +261,7 @@ const VendorRequestForm = () => {
               There was an error sending your message. Please try again later.
             </p>
           )}
-        </form>
+        </form> */}
       </div>
     </section>
   );
