@@ -26,17 +26,8 @@ const VendorRequestForm = () => {
         <div className="container">
           <div className="vendor-card-container">
             <div className="vendor-card">
-              <h4>Inside Vendor</h4>
-              <a href="https://buy.stripe.com/4gweWR5bna3ZgykeUV" class="button">Submit Payment</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="vendor-card-container">
-            <div className="vendor-card">
-              <h4>Outside Vendor</h4>
-              <a href="https://buy.stripe.com/4gw2a533f8ZVa9WcMO" class="button">Submit Payment</a>
+              <h4 className="vendor-name">Vendor</h4>
+              <a href="https://buy.stripe.com/4gweWR5bna3ZgykeUV" class="vendor-button">Submit Payment</a>
             </div>
           </div>
         </div>

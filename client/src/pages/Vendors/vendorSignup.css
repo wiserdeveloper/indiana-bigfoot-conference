@@ -199,15 +199,43 @@
     border-radius: 5px;
   }
 
+  .vendor-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .vendor-button:hover {
+    background-color: #0163cc;
+  }
+
+  .vendor-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vendor-card-container {
+    text-align: center;
+  }
+
   .button:hover {
     background-color: #0163cc;
   }
-  
 
   .vendor-card-container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
   }
 
   .vendor-card {
@@ -220,6 +248,59 @@
     margin-bottom: 20px;
     color: #5d4843;
     font-weight: 400;
+  }
+
+  /* SPONSOR   */
+  .sponsor-card h4 {
+    margin-bottom: 20px;
+    color: #5d4843;
+    font-weight: bold;
+  }
+
+  .sponsor-card p {
+    color: #5d4843;
+  }
+
+  .sponsor-card {
+    background-color: rgb(247, 247, 247);
+    padding: 40px;
+    border-radius: 15px;
+  }
+
+  .sponsor-p {
+    width: 90%;
+    max-width: 1000px;
+    color: #5d4843;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .sponsor-button:hover {
+    background-color: #0163cc;
+  }
+
+  .sponsor-master-container {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+
+  .sponsor-card-container {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .sponsor-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .sponsor-name {
+    justify-content: center;
   }
 }
 /* Tablet - 768px */

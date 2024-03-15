@@ -90,6 +90,9 @@ const Header = () => {
             <Link to="/lodging">LODGING</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
+            <Link to="/sponsors">SPONSORS</Link>
+          </li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Button onClick={handleShow}><FaShoppingCart /> ({productsCount} Items)</Button>
           </li>
         </ul>
