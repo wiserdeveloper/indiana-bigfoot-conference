@@ -9,7 +9,7 @@ const Sponsors = () => {
           <span className="speakers-topper">Sponsor Information</span>
           <h2 className="speakers-title">Sponsor Donation</h2>
 
-          <p className="sponsor-p">If you are interested in being a sponsor or have questions, please make your donation on-line.  If you have questions, please send an email to bfc2024info@gmail.com and we will get back to you. Thank you for your desire to sponsor our event. (Please note that any of these sponsorships can be anonymous if you wish. Just indicate that when you make your donation).</p>
+          <p className="sponsor-p">If you are interested in being a sponsor or have questions, please make your donation on-line.  If you have questions, please send an email to bfc2024info@gmail.com and we will get back to you. Thank you for your desire to sponsor our event. (Please note that any of these sponsorships can be anonymous if you wish. Just indicate that when you make your donation). Once you make a donation, the IBRO team will follow up with an email for more information on your donation.</p>
 
           <div className="sponsor-master-container">
           <div className="container">
