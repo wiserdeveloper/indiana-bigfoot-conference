@@ -12,7 +12,7 @@ const VendorRequestForm = () => {
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Vendor submissions are now closed
+            Vendor submissions are now open
           </h2>
         </div>
         <div className="disclaimer">
