@@ -23,14 +23,14 @@ const VendorRequestForm = () => {
           <p>If you have been selected to be a vendor for the Indiana Bigfoot Conference, please decide if you wish to set up outside or inside.</p>
         </div>
 
-        {/* <div className="container">
+        <div className="container">
           <div className="vendor-card-container">
             <div className="vendor-card">
               <h4 className="vendor-name">Vendor</h4>
               <a href="https://buy.stripe.com/4gweWR5bna3ZgykeUV" class="vendor-button">Submit Payment</a>
             </div>
           </div>
-        </div> */}
+        </div>
 
       </div>
     </section>
