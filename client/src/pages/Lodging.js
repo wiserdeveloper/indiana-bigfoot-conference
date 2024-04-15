@@ -4,6 +4,7 @@ import ItemList from "./ItemList";
 import "./lodging.css";
 
 // HOTELS
+import seasonsLodge from "../components/img/seasonsLodge.jpg"
 import artistsColonyInn from "../components/img/artist-colony-inn.jpg";
 import brownCountyInn from "../components/img/brown-county-inn.jpg";
 import cornerstoneInn from "../components/img/cornerstone-inn.jpg";
@@ -12,7 +13,6 @@ import harmonyTreeResorts from "../components/img/harmony-tree-resorts.jpg";
 import hotelNashville from "../components/img/hotel-nashville.jpg";
 import qualityInn from "../components/img/quality-inn.jpg";
 import theYellowwood from "../components/img/the-yellowwood.jpg";
-import storyInn from "../components/img/story-inn.jpg";
 
 // CABINS
 import schoolhouseInn from "../components/img/schoolhouse-inn.jpg";
@@ -38,6 +38,13 @@ const Lodging = () => {
      const [activeList, setActiveList] = useState('hotels')
 
      const hotels = [
+          {
+               picture: seasonsLodge,
+               name: "The Seasons Lodge",
+               description: "The location of the conference, please call (812) 988-2284 to book a room. Let them know you are here for the conference...",
+               address: "560 IN-46, Nashville, Indiana, 47448",
+               website: "https://www.seasonslodge.com/"
+          },
           {
                picture: artistsColonyInn,
                name: "Artists Colony Inn",
@@ -100,14 +107,6 @@ const Lodging = () => {
                description: "The Yellowwood is a modern retreat in the land of log cabins. The Yellowwood’s clean lines and soothing...",
                address: "911 Sams Hill Road, Nashville, Indiana, 47448",
                website: "https://www.theyellowwood.com/"
-          },
-
-          {
-               picture: storyInn,
-               name: "Story Inn",
-               description: "Story is a quaint village founded in 1851. Today, the entire town has been turned into The Story...",
-               address: "6404 South State Road 135, Nashville, Indiana, 47448",
-               website: "https://storyinn.com/"
           },
      ]
 
