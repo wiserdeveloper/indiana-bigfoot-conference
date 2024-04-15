@@ -20,16 +20,27 @@ const VendorRequestForm = () => {
           of $100 after they are selected. Vendors must be set up by 2PM on
           Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
           <strong>The host will supply electricity and tables.</strong>{" "}
-          <p>If you have been selected to be a vendor for the Indiana Bigfoot Conference, please decide if you wish to set up outside or inside.</p>
+          <p>If you have been selected to be a vendor for the Indiana Bigfoot Conference, please submit your payment below.</p>
+        </div>
+
+        <div className="parent-container">
+        <div className="container">
+          <div className="vendor-card-container">
+            <div className="vendor-card">
+              <h4 className="vendor-name">1 Spot</h4>
+              <a href="https://buy.stripe.com/4gweWR5bna3ZgykeUV" class="vendor-button">Submit Payment</a>
+            </div>
+          </div>
         </div>
 
         <div className="container">
           <div className="vendor-card-container">
             <div className="vendor-card">
-              <h4 className="vendor-name">Vendor</h4>
-              <a href="https://buy.stripe.com/4gweWR5bna3ZgykeUV" class="vendor-button">Submit Payment</a>
+              <h4 className="vendor-name">2 Spots</h4>
+              <a href="https://buy.stripe.com/00g7upeLX2Bx95SeV2" class="vendor-button">Submit Payment</a>
             </div>
           </div>
+        </div>
         </div>
 
       </div>

@@ -302,6 +302,14 @@
   .sponsor-name {
     justify-content: center;
   }
+
+  .parent-container {
+    display: flex;
+  }
+
+  .container {
+    margin-right: 10px;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -368,5 +376,10 @@
   .disclaimer {
     margin-top: -20px;
     margin-bottom: -40px;
+  }
+
+  .container {
+    margin-right: -30px;
+    margin-left: -30px;
   }
 }
