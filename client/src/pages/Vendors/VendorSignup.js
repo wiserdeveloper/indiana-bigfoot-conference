@@ -12,15 +12,16 @@ const VendorRequestForm = () => {
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Vendor submissions are now open
+            Vendor spaces are now full
           </h2>
         </div>
         <div className="disclaimer">
-          * If selected, vendors will then have <em>one month</em> to pay a fee
-          of $100 after they are selected. Vendors must be set up by 2PM on
-          Friday at the latest, doors to vendor hall will open at 10am each day.{" "}
-          <strong>The host will supply electricity and tables.</strong>{" "}
-          <p>If you have been selected to be a vendor for the Indiana Bigfoot Conference, please submit your payment below.</p>
+          Our vendor spaces are now full. If you have been selected to be a vendor for the Indiana Bigfoot Conference, please make your payment of $100 below. Vendors will only have <em>one month</em> to make their payment.
+          Vendors must be set up by 2PM on Friday at the <em>latest</em>, doors to the vendor hall will be open at 10AM each day. <strong>The host will supply electricity and tables.</strong>
+          <br />
+
+          <p>If you would like to be put on a waiting list, please email <strong>bfc2024info@gmail.com</strong></p>
+         
         </div>
 
         <div className="parent-container">
