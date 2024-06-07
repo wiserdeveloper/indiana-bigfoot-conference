@@ -2,7 +2,7 @@ require("dotenv").config()
 
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")('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')
+const stripe = require("stripe")('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')
 const app = express();
 
 const port = 3001;
