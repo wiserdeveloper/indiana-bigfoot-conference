@@ -12,19 +12,37 @@ const VendorRequestForm = () => {
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Vendor spaces are now full
+            Vendor applications are now closed. Thank you for applying!
           </h2>
         </div>
         <div className="disclaimer">
-          Our vendor spaces are now full. If you have been selected to be a vendor for the Indiana Bigfoot Conference, please make your payment of $100 below. Vendors will only have <em>one month</em> to make their payment.
-          Vendors must be set up by 2PM on Friday at the <em>latest</em>, doors to the vendor hall will be open at 10AM each day. <strong>The host will supply electricity and tables.</strong>
+        Our vendors are now closed and fully booked. Please take a look at the list below to see the amazing vendors who will be joining us at our first ever Indiana Bigfoot Conference. <strong>Vendors are open to the public 4pm to 8pm, and Saturday 8am to 8pm.</strong>
           <br />
-
-          <p>If you would like to be put on a waiting list, please email <strong>bfc2024info@gmail.com</strong></p>
-         
         </div>
 
-        <div className="parent-container">
+        <div className="vendors-list">
+          <ul>
+            <li>Carter's Creative Coloring</li>
+            <li>Crowtown Squatchers</li>
+            <li>Cryptid Creatures</li>
+            <li>Cryptids, Creeps, & Conspiracy</li>
+            <li>Linda Wood Creation AI</li>
+            <li>Mark A. Randall Creative Artist</li>
+            <li>Rita's Knit-Knats</li>
+            <li>Nature Lovers Books</li>
+            <li>That's So Ro</li>
+            <li>Damon Pfiefer & Sandee Riggs</li>
+            <li>Tinfoil Tales</li>
+            <li>T.W. Williams Fine Arts</li>
+            <li>Dollars for Dimes Mobile Welding</li>
+            <li>Mudworks Pottery & Timber Laser Art</li>
+            <li>Pine Winds Press</li>
+            <li>Where the Wild Things Grow</li>
+            <li>Adam / Mark Miller</li>
+          </ul>
+        </div>
+
+        {/* <div className="parent-container">
         <div className="container">
           <div className="vendor-card-container">
             <div className="vendor-card">
@@ -42,7 +60,7 @@ const VendorRequestForm = () => {
             </div>
           </div>
         </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

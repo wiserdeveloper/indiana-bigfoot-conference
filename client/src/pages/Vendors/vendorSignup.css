@@ -302,6 +302,26 @@
   .sponsor-name {
     justify-content: center;
   }
+
+  .vendors-list ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .vendors-list li {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    margin-top: 50px;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: bold;
+    color: #5d4843;
+  }
+
+  .vendors-list li:nth-child(odd) {
+    clear: both;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -317,6 +337,10 @@
   #rsvp .cs-label {
     width: 48%;
     font-family: "Solway", serif;
+  }
+
+  .vendors-list ul {
+    margin-left: 250px;
   }
 }
 

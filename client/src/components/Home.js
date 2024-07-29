@@ -59,7 +59,25 @@ const Home = () => {
 
             <div className="vendor-list">
               <h2>Vendor List</h2>
-              <div>Coming soon....</div> 
+                <ul>
+                  <li>Carter's Creative Coloring</li>
+                  <li>Crowtown Squatchers</li>
+                  <li>Cryptid Creatures</li>
+                  <li>Cryptids, Creeps, & Conspiracy</li>
+                  <li>Linda Wood Creation AI</li>
+                  <li>Mark A. Randall Creative Artist</li>
+                  <li>Rita's Knit-Knats</li>
+                  <li>Nature Lovers Books</li>
+                  <li>That's So Ro</li>
+                  <li>Damon Pfiefer & Sandee Riggs</li>
+                  <li>Tinfoil Tales</li>
+                  <li>T.W. Williams Fine Arts</li>
+                  <li>Dollars for Dimes Mobile Welding</li>
+                  <li>Mudworks Pottery & Timber Laser Art</li>
+                  <li>Pine Winds Press</li>
+                  <li>Where the Wild Things Grow</li>
+                  <li>Adam / Mark Miller</li>
+                </ul> 
             </div>
           </div>
 
