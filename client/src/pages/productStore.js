@@ -1,4 +1,4 @@
-import ticket from "../components/img/ticket.jpg";
+// import ticket from "../components/img/ticket.jpg";
 import greenShirt from "../components/img/green-shirt.jpg";
 import whiteShirt from "../components/img/white-shirt.jpg";
 import greenVShirt from "../components/img/green-shirt-v.jpg";
@@ -18,13 +18,13 @@ import whiteHoodie from "../components/img/white-hoodie.jpg";
 // Ticket Key: price_1OSpe8BvXyDWVtmI6n85uySt
 
 const productsArray = [
-     {
-          id: "price_1OTou8BvXyDWVtmIte98LsyT",
-          title: "Ticket",
-          image: ticket,
-          price: 50.00,
-          size: ["small", "medium", "large", "xl", "2xl", "3xl"]
-     },
+     // {
+     //      id: "price_1OTou8BvXyDWVtmIte98LsyT",
+     //      title: "Ticket",
+     //      image: ticket,
+     //      price: 50.00,
+     //      size: ["small", "medium", "large", "xl", "2xl", "3xl"]
+     // },
      {
           id: "price_1OTou0BvXyDWVtmIFONuJelm",
           title: "Small Shirt (Green)",

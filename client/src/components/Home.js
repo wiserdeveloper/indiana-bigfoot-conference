@@ -82,7 +82,7 @@ const Home = () => {
           </div>
 
           <div className="dev-team-text-container">
-            <h3>Website created by Alyssa Wiser, Nathan Grandinette, and Tim Quattrochi</h3>
+            <h3>Website created by Alyssa Wiser</h3>
           </div>
         </div>
       </div>
