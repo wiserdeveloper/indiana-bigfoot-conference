@@ -26,7 +26,7 @@ export default function Tickets() {
           <span className="ticket-topper">Tickets & Merch</span>
           <h2 className="ticket-title">Purchase Conference Tickets & Merch</h2>
           <h3 className="weekend-pass">
-          Tickets for Saturday are no longer available for purchase.
+          Tickets and merch for Saturday are no longer available for purchase.
           </h3>
           <p className="rsvp-text">
           Uncover the mysteries of Bigfoot at the Indiana Bigfoot Conference! Friday features a free Town Hall Meeting, a forum for sharing stories and experiences. On Saturday, expert speakers will delve into evidence and insights surrounding this enigmatic creature. Engage with researchers, witness compelling evidence showcases, and explore merchandise and vendors. Join us for a weekend of discovery and community as we unravel the legend of Bigfoot! Though tickets are sold out, you’re more than welcome to continue purchasing merch to show your support!
@@ -38,7 +38,7 @@ export default function Tickets() {
           <h2 className="refund-disc">No refunds.</h2>
         </div>
         
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <label htmlFor="size-dropdown">Select Size:</label>
           <select id="size-dropdown" onChange={handleSizeChange}>
             <option value="all">All Sizes</option>
@@ -51,16 +51,16 @@ export default function Tickets() {
             <option value="4xl">4XL</option>
             <option value="5xl">5XL</option>
           </select>
-        </div>
+        </div> */}
 
-        STRIPE
+        {/* STRIPE
         <Row xs={1} md={3} className="g-4">
         {filteredProducts.map((product, idx) => (
           <Col align="center" key={idx}>
             <ProductCard product={product} />
           </Col>
         ))}
-      </Row>
+      </Row> */}
 
       </div>
     </section>
