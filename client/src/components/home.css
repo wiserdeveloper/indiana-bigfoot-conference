@@ -95,6 +95,66 @@
           color: #e5dece;
           border-radius: 20px;
      }
+
+     .schedule-container {
+          width: 90%;
+          max-width: 1200px;
+          color: #5d4843;
+          font-size: large;
+     }
+
+     .schedule-container h1 {
+          text-align: center;
+     }
+
+     .friday-container,
+     .saturday-container {
+          width: 48%; /* Adjusts width to fit two columns */
+          display: inline-block;
+          vertical-align: top; /* Aligns them vertically */
+          margin: 0 1%; /* Space between columns */
+          background: #fff; /* Optional background color */
+          padding: 20px;
+          border-radius: 8px; /* Optional rounded corners */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+     }
+
+     .friday-container h3,
+     .saturday-container h3 {
+          margin: 0;
+          text-align: center;
+          margin: 10px;
+          color: #5d4843;
+     }
+
+     .friday-container,
+     .saturday-container h3 {
+          margin-top: 5px;
+     }
+
+     .list-container {
+          margin-top: 20px;
+     }
+
+     .schedule-list {
+          display: flex;
+          justify-content: space-between; /* Space between time and description */
+          margin-bottom: 10px; /* Space between items */
+          text-align: center;
+     }
+
+     .schedule-list p {
+          margin: 0; /* Remove default margin */
+     }
+
+     .schedule-list p:first-child {
+          flex: 0 0 40%; /* Adjust width for time */
+     }
+
+     .schedule-list p:last-child {
+          flex: 1; /* Allow description to take remaining space */
+          padding-left: 20px; /* Add padding to create space */
+     }
 }
 
 .flyer-container {
