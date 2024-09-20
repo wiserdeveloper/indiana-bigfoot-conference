@@ -97,14 +97,17 @@
      }
 
      .schedule-container {
-          width: 90%;
+          width: 100%;
           max-width: 1200px;
           color: #5d4843;
           font-size: large;
+          margin: 0 auto; /* Center content horizontally */
+          padding: 20px;
      }
 
      .schedule-container h1 {
           text-align: center;
+          margin-right: 50px;
      }
 
      .friday-container,
@@ -116,7 +119,15 @@
           background: #fff; /* Optional background color */
           padding: 20px;
           border-radius: 8px; /* Optional rounded corners */
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+          /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Optional shadow */
+     }
+
+     .friday-container {
+          margin-left: -50px;
+     }
+
+     .saturday-container {
+          margin-right: 30px;
      }
 
      .friday-container h3,
@@ -145,6 +156,7 @@
 
      .schedule-list p {
           margin: 0; /* Remove default margin */
+          padding: 10px;
      }
 
      .schedule-list p:first-child {
@@ -154,6 +166,22 @@
      .schedule-list p:last-child {
           flex: 1; /* Allow description to take remaining space */
           padding-left: 20px; /* Add padding to create space */
+     }
+}
+
+@media only screen and (max-width: 768px) {
+     .friday-container,
+     .saturday-container {
+          width: 100%; /* Set to 100% width for mobile */
+          display: block; /* Stack on top of each other */
+          margin-bottom: 20px; /* Add margin between sections */
+          background: #fff;
+          padding: 20px;
+          border-radius: 8px;
+     }
+
+     .friday-container {
+          margin-left: 5px;
      }
 }
 
