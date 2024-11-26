@@ -16,7 +16,7 @@ const Sponsors = () => {
           <div className="sponsor-card-container">
             <div className="sponsor-card">
               <h4 className="sponsor-name">$50 Tier</h4>
-               <p>*Anonymous donation</p>
+               {/* <p>*Anonymous donation</p> */}
               <a href="https://buy.stripe.com/6oE7up47ja3Z6XK6or" class="sponsor-button">Submit Payment</a>
             </div>
           </div>

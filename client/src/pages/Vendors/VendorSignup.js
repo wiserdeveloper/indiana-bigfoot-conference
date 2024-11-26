@@ -12,15 +12,15 @@ const VendorRequestForm = () => {
       <div className="rsvp-container">
         <div className="rsvp-content">
           <h2 className="rsvp-title">
-            Vendor applications are now closed. Thank you for applying!
+            Vendor applications are currently closed. Thank you for applying!
           </h2>
         </div>
         <div className="disclaimer">
-        Our vendors are now closed and fully booked. Please take a look at the list below to see the amazing vendors who will be joining us at our first ever Indiana Bigfoot Conference. <strong>Vendors are open to the public 4pm to 8pm, and Saturday 8am to 8pm.</strong>
+        Our vendor application is currently closed.
           <br />
         </div>
 
-        <div className="vendors-list">
+        {/* <div className="vendors-list">
           <ul>
             <li>Carter's Creative Coloring</li>
             <li>Crowtown Squatchers</li>
@@ -40,7 +40,7 @@ const VendorRequestForm = () => {
             <li>Where the Wild Things Grow</li>
             <li>Adam / Mark Miller</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* <div className="parent-container">
         <div className="container">

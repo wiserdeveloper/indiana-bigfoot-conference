@@ -75,16 +75,16 @@ const Header = () => {
             <Link to="/">HOME</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
-            <Link to="/tickets">TICKETS</Link>
+            <Link to="/tickets">TICKETS & MERCH</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
             <Link to="speakers">SPEAKERS</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
-            <Link to="/vendors">VENDORS</Link>
+            <Link to="/vendors">VENDOR APPLICATION</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
-            <Link to="/location">LOCATION</Link>
+            <Link to="/location">EVENT LOCATION</Link>
           </li>
           <li onClick={() => setIsNavExpanded(false)}>
             <Link to="/lodging">LODGING</Link>

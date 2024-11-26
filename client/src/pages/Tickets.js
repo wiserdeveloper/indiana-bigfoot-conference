@@ -26,16 +26,16 @@ export default function Tickets() {
           <span className="ticket-topper">Tickets & Merch</span>
           <h2 className="ticket-title">Purchase Conference Tickets & Merch</h2>
           <h3 className="weekend-pass">
-          Tickets and merch for Saturday are no longer available for purchase.
+          Tickets will go on sale in January 2025
           </h3>
-          <p className="rsvp-text">
+          {/* <p className="rsvp-text">
           Uncover the mysteries of Bigfoot at the Indiana Bigfoot Conference! Friday features a free Town Hall Meeting, a forum for sharing stories and experiences. On Saturday, expert speakers will delve into evidence and insights surrounding this enigmatic creature. Engage with researchers, witness compelling evidence showcases, and explore merchandise and vendors. Join us for a weekend of discovery and community as we unravel the legend of Bigfoot! Though tickets are sold out, you’re more than welcome to continue purchasing merch to show your support!
           </p>
           <h2 className="shirts-disc">
             Shirts and hoodies will be available for pick up during the
             convention, show proof of purchase.
           </h2>
-          <h2 className="refund-disc">No refunds.</h2>
+          <h2 className="refund-disc">No refunds.</h2> */}
         </div>
         
         {/* <div className="dropdown">

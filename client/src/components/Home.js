@@ -17,25 +17,23 @@ const Home = () => {
       <div id="hp">
         <div className="hp-container">
           <div className="hp-content">
-            <span className="hp-topper">Indiana's 1st Annual Bigfoot Conference</span>
+            <span className="hp-topper">Indiana's 2nd Annual Bigfoot Conference</span>
             <h2 className="hp-title">Indiana Bigfoot Conference</h2>
           </div>
 
           <div className="hp-text-container">
-            <h2>September 27th - September 28th, 2024</h2>
+            <h2>September 26th - September 27th, 2025</h2>
             <h2>The Seasons Lodge, Nashville, Indiana</h2>
             <NavLink className="tickets-btn" to="/tickets">Buy Tickets!</NavLink>
-            <h3>Get ready to mark your calendars and join us for an unforgettable
-            experience at Indiana's highly anticipated Bigfoot Conference taking
-            place from September 27th to September 28th, 2024. Nestled in the
-            captivating realm of Nashville, Indiana, renowned for its legendary
-            Bigfoot sightings, this exceptional event is an absolute must-attend
-            for all enthusiasts and curious minds alike.</h3>
+            <h3>Join us for the 2nd Annual Bigfoot Conference, taking place September 26th–27th! Immerse yourself in firsthand experiences, shop from local artists, and connect with fellow enthusiasts.</h3>
           </div>
 
           <div className="schedule-container">
-            <h1>Schedule</h1>
-            <div className="friday-container">
+            <h1>Schedule
+              <h3>Coming soon...</h3>
+            </h1>
+
+            {/* <div className="friday-container">
               <h3 className="friday-date">Friday, September 27th <br /> 4pm - 8pm</h3>
               <h3>Town Hall</h3>
               <div className="schedule list-container">
@@ -60,9 +58,9 @@ const Home = () => {
                   <p>Venue closed</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="saturday-container">
+            {/* <div className="saturday-container">
               <h3>Saturday, September 28th <br /> 8am - 8pm</h3>
               <h3>Speaker Event</h3>
               <div className="schedule list-container">
@@ -139,7 +137,7 @@ const Home = () => {
                   <p>Venue Closed</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="flyer-container">
@@ -168,7 +166,8 @@ const Home = () => {
 
             <div className="vendor-list">
               <h2>Vendor List</h2>
-                <ul>
+              <p>Coming soon</p>
+                {/* <ul>
                   <li>Carter's Creative Coloring</li>
                   <li>Crowtown Squatchers</li>
                   <li>Cryptid Creatures</li>
@@ -186,7 +185,7 @@ const Home = () => {
                   <li>Pine Winds Press</li>
                   <li>Where the Wild Things Grow</li>
                   <li>Adam / Mark Miller</li>
-                </ul> 
+                </ul>  */}
             </div>
           </div>
 

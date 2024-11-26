@@ -56,7 +56,10 @@ export default function Speakers() {
           <span className="speakers-topper">Speakers</span>
           <h2 className="speakers-title">Meet the Speakers</h2>
         </div>
-        {speakers &&
+        <div>
+          <h2>Coming Soon...</h2>
+        </div>
+        {/* {speakers &&
           speakers.map((speaker) => {
             return (
               <div className="speakers-members-container">
@@ -81,8 +84,8 @@ export default function Speakers() {
                 </div>
               </div>
             );
-          })}
-        <div className="schedule-container">
+          })} */}
+        {/* <div className="schedule-container">
           <h2>Speaker Schedule</h2>
           <ul>
             <li>Leroy (IBRO Host of Event) - 9:00am to 10:00am</li>
@@ -93,7 +96,7 @@ export default function Speakers() {
             <li>Marc DeWerth - 4:30pm to 5:30pm</li>
             <li>Adam Davies - 5:45pm to 6:45pm</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </section>
   );
