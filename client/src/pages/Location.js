@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./location.css";
 
-import desktopImg from "../components/img/nashville-in.jpg";
-import mobileImg from "../components/img/mobile-nashville.jpg";
+import desktopImg from "../components/img/seasonsLodge.jpg";
+import mobileImg from "../components/img/seasonsLodgeMobile.jpg";
 import mapDesktopImg from "../components/img/nashville-map-desktop.png";
 import mapMobileImg from "../components/img/nashville-map-mobile.png";
 
@@ -15,7 +15,7 @@ const Location = () => {
       <div className="location-container">
         <div className="location-content">
           <span className="location-topper">Location</span>
-          <h2 className="location-title">Nashville, Indiana</h2>
+          <h2 className="location-title">The Seasons Lodge</h2>
         </div>
 
         <div className="location-flex-container">
@@ -37,18 +37,7 @@ const Location = () => {
 
           <div className="location-text-container">
             <p data-testid="city-description">
-              Nestled within the rolling hills of southern Indiana, Nashville
-              exudes a unique charm that captivates the soul of every traveler.
-              This picturesque town is an artistic haven, where quaint streets
-              are adorned with galleries, studios, and boutiques, showcasing the
-              works of local artisans. The air is filled with the sweet melodies
-              of live music, offering a soothing backdrop as you explore the
-              scenic trails, lush forests, and serene waterways that surround
-              the area. With its warm community spirit and a welcoming
-              atmosphere, Nashville, Indiana, invites you to indulge in its
-              creative spirit, relish in outdoor adventures, and discover a
-              hidden gem that promises unforgettable memories and a true sense
-              of connection with both art and nature.
+              Located in Nashville, Indiana, The Seasons Lodge will hosting the 2nd Annual Bigfoot Conference. If you are attending the conference and would like to stay at The Seasons Lodge, you <strong>MUST</strong> call to make a reservation and let them know that you will be attending the Bigfoot Conference.
             </p>
             <h1>Come & Explore Nashville!</h1>
           </div>
@@ -56,8 +45,8 @@ const Location = () => {
 
         <div className="the-seasons-text">
             <h1>Want to reserve a room at The Seasons Lodge?</h1>
-            <p>The Indiana Bigfoot Conference is scheduled to take place at The Seasons Lodge from September 27th through the 28th. If you're planning to stay at this venue during the event, please call the number below to book your room. When making your reservation, kindly mention your affiliation with the Indiana Bigfoot Conference to ensure you receive the relevant accommodations.</p>
-            <p>1-800-365-7327</p>
+            <p>The Indiana Bigfoot Conference is scheduled to take place at The Seasons Lodge from September 26th through the 27th. If you're planning to stay at this venue during the event, please call the number below to book your room. When making your reservation, kindly mention your affiliation with the Indiana Bigfoot Conference to ensure you receive the relevant accommodations.</p>
+            <p>(812) 988-2284</p>
         </div>
 
         <p className="drag-map">Drag and click map</p>

@@ -252,6 +252,7 @@ const Lodging = () => {
         <div className="lodging-content">
           <span className="lodging-topper">Lodging</span>
           <h2 className="lodging-title">Nearby Lodging</h2>
+          <span>If you are planning on booking a room at The Seasons Lodge, please call (812) 988-228 and let them know you will also be attending the Bigfoot Conference</span>
         </div>
 
         <div>
